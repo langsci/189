@@ -11,7 +11,7 @@ import pprint
 import glob
 import string
 import argparse
-import langsci
+#import langsci
 from asciify import ASCIITRANS, FRENCH_REPLACEMENTS, GERMAN_REPLACEMENTS, ICELANDIC_REPLACEMENTS, asciify
 from bibnouns import LANGUAGENAMES, OCEANNAMES, COUNTRIES, CONTINENTNAMES, CITIES, OCCURREDREPLACEMENTS
 from delatex import dediacriticize
