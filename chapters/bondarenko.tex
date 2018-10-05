@@ -1,0 +1,1432 @@
+\documentclass[output=paper,modfonts,nonflat,
+% colorlinks, citecolor=brown,
+% draftmode,
+% draft
+ hidelinks
+]{langsci/langscibook} 
+
+  
+\author{Tatiana Bondarenko\affiliation{Massachusetts Institute of Technology}}
+\title{Russian Datives Again: on the (im)possibility of the small clause analysis} 
+\abstract{{Please provide an abstract}}
+
+ 
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper
+}{}
+
+\begin{document}
+\maketitle 
+ 
+
+\section{{Introduction}}
+
+In this paper I will discuss applicability of the small clause analysis (\citealt{Kayne1984,Harley1996,BeckJohnson2004,Pylkkänen2008}, among others) that has been proposed for the English double object construction \REF{ex:bondarenko:1} {to constructions with dative arguments in Russian \REF{ex:bondarenko:1}.} 
+
+
+ \ea\label{ex:bondarenko:}
+{{John gave Mary a letter.}}\\
+
+ \ea\label{ex:bondarenko:}
+{Russian}\\
+
+\gll Vasja otdal Maše pis’mo /pis’mo Maše\\
+     Vasja gave Masha.DAT letter.ACC / letter.ACC Masha.DAT\\
+\glt “Vasja gave Masha a letter.”
+\z
+\z
+
+
+{The small clause analysis involves the idea that in ditransitive constructions a direct object and an indirect object are merged together forming a small clause excluding the verb. This idea is shared by a variety of approaches (\citealt{Kayne1984,Pesetsky1995,Harley1996,Harley2002,Cuervo2003,BeckJohnson2004,JungMiyagawa2004,McIntyre2006,Pylkkänen2008,Schäfer2008,Lomashvili2010,HarleyJung2015}, among others), which diverge on the exact nature of this formation (small clause /low applicative /PP /HaveP) and a few other details of the derivation. The tree in \figref{fig:bondarenko:1} (adapted from \citep{Harley2002}) illustrates a version of this analysis for the English double object construction in \REF{ex:bondarenko:1}: the direct object (}{\textit{a} \textit{letter}}{) and the indirect object (}{\textit{Mary}}{) are combined with the help of a special P}{\textsubscript{HAVE}}{, and the resulting PP becomes a complement of the verb.}
+
+\begin{figure}
+\begin{forest}
+ [vP
+  [\hspace*{2cm}]
+  [v'
+    [v 
+      [CAUSE]
+    ]
+    [PP
+      [DP
+	[Mary, roof]
+      ]
+      [P'
+	[P
+	  [P\textsubscript{\textsc{have}}]
+	]
+	[DP
+	  [a letter, roof]
+	]
+      ]
+    ]
+  ]
+ ]
+\end{forest}
+
+\caption{\label{fig:bondarenko:1} Double Object Construction (adapted from \citep[4]{Harley2002})}
+\end{figure}
+
+
+
+{The small clause analysis makes use of lexical decomposition in syntax: different subevents of a predicate are represented by different projections in syntax (}{\textit{v}}{\textsubscript{DO/CAUS}}{P for a causing subevent, SC/ResultP/HaveP/PP for a result state subevent, among some others). Under such approach to the syntax-semantics interface, indirect objects differ with respect to where they are introduced in the syntactically represented lexical decomposition of a given verb (\citealt{Cuervo2003,Schäfer2008}), among others). Their positions account for different interpretations and different syntactic properties. Indirect objects in the English double object construction are participants of the result state subevent under the small clause analysis.}
+
+
+
+The aim of this paper is to argue that Russian ditransitive verbs like \textit{otdavat’} ‘give’ in \REF{ex:bondarenko:2} should not be analyzed as involving a small clause structure. While English might decompose ditransitive verbs in syntax (\textit{give} as CAUSE to HAVE), Russian does not exhibit the decomposition of this sort. My argumentation employs the idea that repetitive morphemes like \textit{again} single out subevents in the semantics of a predicate, and thus, are able to detect the exact placement of indirect objects in syntactic structures with lexically decomposed verbs. If an indirect object denotes a participant of some subevent e\textsubscript{1}, then it should be in the scope of a repetitive adverb that singles out that subevent e\textsubscript{1}. I will try to show that Russian has constructions where a dative argument is a participant of a stative subevent of a predicate, but ditransitive sentences are not among such constructions. 
+
+
+
+The crucial observation for my proposal is that in English ditransitive sentences (both the double object construction \REF{ex:bondarenko:3} and the to-PP construction \REF{ex:bondarenko:4}), but not in Russian (with both the dative argument preceding the accusative one \REF{ex:bondarenko:5} and the accusative preceding the dative \REF{ex:bondarenko:6})\footnote{I do not want to imply that \REF{ex:bondarenko:5} and \REF{ex:bondarenko:6} are equivalents of English double object construction and to-PP construction correspondingly. The sentences in \REF{ex:bondarenko:5}-\REF{ex:bondarenko:6} just show that the availability of the restitutive reading does not depend on the relative word order of dative and accusative arguments in Russian.} the restitutive reading of AGAIN\footnote{I use small caps AGAIN to refer to this kind of repetitive adverbs generally and words in italics (English \textit{again,} Russian \textit{opjat’}) to refer to concrete lexical items of languages.} is available.
+
+
+ \ea\label{ex:bondarenko:}
+{Thilo gave Satoshi the map again.}\\
+
+\ea “Thilo gave Satoshi the map, and that had happened before.”\\
+= {repetitive} 
+
+\ex “Thilo gave Satoshi the map, and Satoshi had had the map      before.”\\
+= {restitutive}
+\z
+\z
+
+\begin{quote}
+(\citealt{BeckJohnson2004}: 113)
+\end{quote}
+
+ \ea\label{ex:bondarenko:}
+{Thilo gave the map to Satoshi again.}\\
+
+\ea “Thilo gave Satoshi the map, and that had happened before.”\\
+= {repetitive}
+
+\ex “Thilo gave Satoshi the map, and Satoshi had had the map   before.”\\
+= {restitutive}
+\z
+\z
+
+\begin{quote}
+(\citealt{BeckJohnson2004}: 116)
+\end{quote}
+
+ \ea\label{ex:bondarenko:}
+{Russian: DAT ACC}\\
+
+\gll Maša opjat’ otdala Vase knigu.\\
+     Masha again gave Vasja.DAT book.ACC\\
+\ea “Masha gave Vasja the book, and that had happened before.”\\
+= {repetitive}
+
+\ex *“Masha gave Vasja the book, and Vasja had had the book   before.”\\
+= *{restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Russian: ACC DAT}\\
+
+\gll Maša opjat’ otdala knigu. Vase\\
+     Masha again gave book.ACC Vasja.DAT\\
+\ea “Masha gave Vasja the book, and that had happened before.”\\
+= {repetitive}
+
+\ex *“Masha gave Vasja the book, and Vasja had had the book   before.”\\
+= *{restitutive}
+\z
+\z
+
+
+{Under the restitutive reading, the subevent that is singled out by} {AGAIN}{ is the state of possession between the indirect object and the direct object. For example, in \REF{ex:bondarenko:3}-\REF{ex:bondarenko:4} it is the reading when a state of Satoshi having the map is being repeated.}\footnote{An anonymous reviewer asks whether the presence of the restitutive reading entails the small clause analysis for the PP datives, given the logic of \citet{BeckJohnson2004}. While the analysis for the PP datives is not spelled out in detail in (\citealt{BeckJohnson2004}), one can infer from the discussion therein that the authors propose distinct syntactic structures for the DOC and the to-PP construction, both of which include a small clause. Given the logic of \citet{BeckJohnson2004}, the DOC includes a small clause that consists of the two objects merging with the help of a functional projection (XP), which is then combined with the verb. The to-PP construction under their view presents a subcase of a more general NP + PP pattern. In sentences of this sort V merges directly with a PP and takes an NP as its specifier. The PP under consideration contains a null PRO as its subject that corefers with the NP that is the specifier of the verb. Thus, as the authors themselves put it, the PP becomes in effect a small clause (\citealt{BeckJohnson2004}: 118). In other words, the presence of the restitutive reading in \REF{ex:bondarenko:4} under the logic of \citet{BeckJohnson2004} does entail the presence of a small clause in the syntactic structure but does not necessarily entail that the syntactic structures of the DOC and the to-PP construction are identical.}{ This reading is impossible for Russian ditransitives: in \REF{ex:bondarenko:5}-\REF{ex:bondarenko:6}} {AGAIN}{ cannot single out the state of Vasja having the book. The example in \REF{ex:bondarenko:7} illustrates that providing more context does not increase the availability of the restitutive reading in Russian ditransitives.}
+
+
+ \ea\label{ex:bondarenko:}
+{{Example}}\\
+
+Context: Vasja had always had the book “Two captains” by Kaverin; he had never given it to anyone. One day he accidentally left the book at Masha’s place ...
+
+\ea
+\gll         \# I togda Maša opjat’ otdala /otpravila /vernula Vase knigu.\\
+ and then Masha again gave /sent /returned Vasja.DAT book.ACC\\
+
+\glt Expected reading: “And then Masha gave /sent /returned Vasja the book, and Vasja had had the book before.”
+
+\ex
+\gll     \# I togda Maša opjat’ otdala /otpravila /vernula knigu Vase.\\
+ and then Masha again gave /sent /returned book.ACC Vasja.DAT\\
+\glt Expected reading: “And then Masha gave /sent /returned the book to Vasja, and Vasja had had the book before.”
+\z
+\z
+
+
+{Why does Russian differ from English with respect to the availability of the restitutive reading in ditransitives? Does this difference reflect different syntactic structures of ditransitive sentences in these languages? Does Russian have constructions with dative arguments where} {AGAIN}{ is able to single out the stative subevent of a predicate? These questions will be central to the forthcoming discussion.}
+
+
+
+This paper is structured as follows. In section §2 I will introduce the syntactic approach to the meaning of AGAIN and discuss how the availability of the restitutive reading in English ditransitives argues for the small clause analysis. In section §3 I will argue against Russian ditransitives involving a small clause structure. I will consider different potential reasons for the unavailability of the restitutive reading in Russian ditransitive sentences and conclude that it has a syntactic explanation. In section §4 I will discuss constructions with higher dative arguments and show that in these sentences the stative subevent can be singled out, but the dative argument is not a participant of it. In section §5 I will provide evidence that dative arguments in Russian can in principle be participants of the stative subevent of a predicate and that a construction with locative applicatives exemplifies such a case. Section §6 concludes the paper.
+
+
+\section{The small clause analysis of ditransitives: evidence from AGAIN}
+
+In this paper I will assume the syntactic approach\footnote{There is a competing semantics approach to the ambiguity of repetitives (Fabricius-\citealt{Hansen2001}, Jäger, G. \& R. \citealt{Blutner2000}), among others), according to which different readings of AGAIN emerge due to the lexical ambiguity of repetitive morphemes. In this paper I will not discuss the applicability of the semantics approach to the data under consideration.} to the ambiguity of repetitive adverbs (\citealt{vonStechow1996,BeckJohnson2004,Beck2005,AlexiadouEtAl2014,LechnerEtAl2015}) among others), according to which different readings of AGAIN are attributed to different attachments of AGAIN in the syntactic representation. Under this approach the semantics of AGAIN is taken to be always the same and involve repetition of some event:
+
+
+ \ea\label{ex:bondarenko:}
+{[[AGAIN]](P\textsubscript{<s,t>})(e) =   1 iff          P(e) \& ${\exists}$e’ [e’ <\textsubscript{T} e \& P(e’)];}\\
+
+             0 iff ¬ P(e) \& ${\exists}$e’ [e’ <\textsubscript{T} e \& P(e’)];\\
+\glt         undefined otherwise.
+\z
+
+
+The semantics in \REF{ex:bondarenko:8} states that AGAI takes a property of events and an event as its arguments and returns 1 if the property is true of the event and 0 if the property is not true of the event. The crucial part of AGAIN’s meaning is a presupposition that there is another event that temporally precedes the event under consideration of which the property is true. If the presupposition is not met, the meaning of AGAIN is undefined. Under the syntactic approach different readings of AGAIN arise due to its modification of different subevents in the syntactically represented lexical decomposition: the subevent that is modified by \textit{again} is understood as being repeated.
+
+
+
+\citet{BeckJohnson2004} claimed that the presence of the two readings of \textit{again} with the double object construction provides support for the small clause analysis of English ditransitives. If ditransitive verbs such as \textit{give} are lexically decomposed into the subevent denoting the action undertaken by an agent (represented in syntax by \textit{v}) and the stative subevent (represented in syntax by a small clause – HaveP), then \textit{again} should be able to attach to both \textit{v}P and HaveP and modify the respective subevents, giving rise to the repetitive-restitutive ambiguity. This expectation is borne out, as we have observed in \REF{ex:bondarenko:3} (repeated here as \REF{ex:bondarenko:9}). The fact that indirect objects are understood as participants of stative subevents of ditransitive verbs suggests that they are inside a small clause that represents a given stative subevent syntactically. The analysis that \citet{BeckJohnson2004} propose for sentences like \REF{ex:bondarenko:9} is sketched out in \REF{ex:bondarenko:10} and \REF{ex:bondarenko:11} (for the repetitive and the restitutive reading, respectively).
+
+
+ \ea\label{ex:bondarenko:}
+{Thilo gave Satoshi the map again.}\\
+
+\ea “Thilo gave Satoshi the map, and that had happened before.”\\
+= {repetitive}
+
+\ex “Thilo gave Satoshi the map, and Satoshi had had the map   before.”\\
+= {restitutive}
+\z
+\z
+
+\begin{quote}
+(\citealt{BeckJohnson2004}: 113)
+\end{quote}
+
+ \ea\label{ex:bondarenko:}
+{The repetitive reading of \textit{again} in English DOC}\\
+
+\ea \textbf{[\textit{\textsubscript{v}}}\textbf{\textsubscript{P}}\textsubscript{}  [\textit{\textsubscript{v}}\textsubscript{P} Thilo [give [\textsubscript{BECOME} [\textsubscript{HAVEP} Satoshi HAVE the map]]]] \textbf{again]}\\
+\ex λe.again(e)(λe'.give(e')(Thilo) \& ${\exists}$e''\\
+\glt        [BECOME(e'')(λe'''.have(e''')(the\_map)(Satoshi)) \& CAUSE(e'')(e')])
+
+\ex     “Once more, a giving by Thilo caused Satoshi to come to have   the map.”
+\z
+\z
+
+\begin{quote}
+(\citealt{BeckJonshon2004}: 114)
+\end{quote}
+
+ \ea\label{ex:bondarenko:}
+{The restitutive reading of \textit{again} in English DOC}\\
+
+\ea Thilo [give [\textsubscript{BECOME} \textbf{[\textsubscript{HAVEP}} [\textsubscript{HAVEP} Satoshi HAVE the map] \textbf{again]}]]\\
+\ex λe.give(e)(Thilo) \& ${\exists}$e'\\{}
+     [BECOME(e')(λe''.again(e'')(λe'''.have(e''')(the\_map)(Satoshi))) \& CAUSE(e')(e)]\\
+\ex     “A giving by Thilo caused Satoshi to come to once more have the   map.”
+\z
+\z
+
+\begin{quote}
+(\citealt{BeckJonshon2004}: 114)
+\end{quote}
+
+
+In \REF{ex:bondarenko:10} \textit{again} attaches to the \textit{v}P denoting the whole event of Thilo giving Satoshi the map, giving rise to the repetitive interpretation. In \REF{ex:bondarenko:11} \textit{again} attaches to the small clause that denotes the stative event of Satoshi having the map, thus the restitutive reading arises.
+
+
+
+For \citet{BeckJohnson2004} there are no elements CAUSE and BECOME in the syntactic representation of ditransitive sentences. Syntax provides a verb that takes a small clause as its complement, and it’s the semantic component that is responsible for introducing components like CAUSE and BECOME that are required for deriving the correct interpretations. It was proposed by von \citet{Stechow1995} (and further employed in (\citealt{BeckJohnson2004}) and \citep{Beck2005}) that the following special semantics principle – Principle R – is at work in structures with small clauses:
+
+
+\ea
+Principle R\\
+
+     If α = [\textsubscript{V}γ  \textsubscript{SC}β] and ǁ$\beta ǁ$ is of type <s, t> and ǁ$\gamma ǁ$ is of type\\
+     <e,…<e, <s, t>>> (an n-place predicate), then ǁ$\alpha ǁ$ = λx\textsubscript{1}…λx\textsubscript{n} λe.\\
+     ǁ$\gamma ǁ$(e)(x\textsubscript{1})…(x\textsubscript{n}) \& ${\exists}$e' [BECOME(e')( ǁ$\beta ǁ$) \& CAUSE (e')(e)].\\
+     \z
+\begin{quote}
+adapted from \citep[7]{Beck2005}
+\end{quote}
+
+
+This principle ensures that a verb (an n-place predicate) is properly “glued” with a small clause (a property of events) by inserting CAUSE and BECOME components into the semantics representation.
+
+
+
+This line of reasoning (\citealt{BeckJohnson2004}) that makes use of the syntactic decomposition of ditransitive verbs into a verb and a small clause and the syntactic approach to the ambiguity of repetitive morphemes, allows naturally to explain the possible interpretations of English \textit{again} in the double object construction.\footnote{There has been another attempt to explain the repetitive-restitutive ambiguity of \textit{again} in the English double object construction by \citet{Bruening2010}, who argues for the asymmetrical applicative analysis of English ditransitives: a verb merges with a direct object first, and then the VP combines with an applicative head that introduces an indirect object as its specifier. Unlike under a small clause analysis, under this syntactic analysis the two interpretations of \textit{again} do not fall out for free: special assumptions about verb head movement, object movement and interpretation of copies are required in order to obtain both repetitive and restitutive readings in ditransitive structures.} In the next section I will discuss why a similar logic is not applicable to the case of Russian ditransitives.
+
+
+\section{Russian ditransitives: against the small clause analysis}
+
+There could be potentially different reasons for why restitutive readings are not available in Russian ditransitive clauses. The first hypothesis that I will explore is that the Russian repetitive adverb \textit{opjat’} has different properties than English \textit{again}. It has been observed (\citealt{RappvonStechow1999,Beck2005,AlexiadouEtAl2014,LechnerEtAl2015}) that not all repetitive morphemes across languages have the ability to access different subevents inside decomposition structures. For example, the German repetitive adverb \textit{erneut} ‘again’ cannot have restitutive readings with lexical accomplishment verbs like \textit{öffnen} ‘open’, unlike another repetitive adverb \textit{wieder} ‘again’, \REF{ex:bondarenko:13}-\REF{ex:bondarenko:14}.
+
+
+ \ea\label{ex:bondarenko:}
+{German}\\
+
+\gll Maria hat die Tür erneut geöffnet.\\
+     Maria has DEF.fem.ACC door again opened\\
+\ea “Maria opened the door, and that had happened before.”\\
+= {repetitive}
+
+\ex *“Maria opened the door, and the door had been open before.”\footnotemark
+\z
+\z
+\footnotetext{Note that the unavailability of the restitutive reading in \REF{ex:bondarenko:13} cannot be due to its verb form (which is different from the one in \REF{ex:bondarenko:14}), since the use of the same form as in \REF{ex:bondarenko:14} does not lead to the availability of the restitutive reading:
+
+\ea\label{ex:bondarenko:}
+\gll {(I)  …dass Maria die Tür erneut öffnete.}\\
+…that Maria DEF.fem.ACC door again opened  \\
+\ea     “…that Maria opened the door, and that had happened before.”= \textit{repetitive} 
+
+\ex     *”…that Maria opened the door, and the door had been open before.”= *restitutive \\
+ = *{restitutive}
+\z
+\z
+}
+
+\begin{quote}
+\citep[12]{Beck2005}
+\end{quote}
+
+
+ \ea\label{ex:bondarenko:}
+{German}\\
+
+\gll Ali Baba Sesam wieder öffnete\\
+    Ali Baba Sezam again opened\\
+
+\ea “Ali Baba opened Sezam, and that had happened before.”\\
+= {repetitive}
+\todo{As a native speaker, I long for a verb in position 2. This sentence is garbled.}
+
+\ex “Ali Baba opened Sezam, and Sezam had been open before.”\\
+= {restitutive}
+\z
+\z
+
+\begin{quote}
+(\citealt{vonStechow1996}: 3)
+\end{quote}
+
+
+This variation with respect to the ability of adverbs to single out different subevents in the syntactically represented lexical decomposition of predicates was captured by the Visibility Parameter (\citealt{RappvonStechow1999,Beck2005}):
+
+
+ \ea\label{ex:bondarenko:}
+{The Visibility Parameter for decomposition adverbs}\\
+
+\glt A D(ecomposition)-adverb can / cannot attach to a phrase with a phonetically empty head.
+\z
+
+\begin{quote}
+(\citealt{RappvonStechow1999}) via \citep[13]{Beck2005}
+\end{quote}
+
+
+Under the assumption that lexical accomplishments in \REF{ex:bondarenko:13}-\REF{ex:bondarenko:14} involve a small clause with a null head that corresponds to the stative subevent of the door/Sezam being open, the Visibility Parameter states that the difference between German \textit{wieder} and \textit{erneut} is that the former, but not the latter can attach to a phrase with a phonetically null head, hence only the former can have the restitutive reading in sentences with lexical accomplishments.
+
+
+
+The following question can then be asked about Russian \textit{opjat’}: is it an adverb that can attach to a phrase with a phonetically empty head? It turns out that \textit{opjat’} can single out the stative subevent of lexical accomplishments (\REF{ex:bondarenko:16}-\REF{ex:bondarenko:17}), thus classifying as a decomposition adverb that can look inside the decomposition structure and modify subevents that are not expressed by overt phonetic material. \textit{Opjat’} is not different from German \textit{wieder} or English \textit{again} in this respect.
+
+
+ \ea\label{ex:bondarenko:}
+{Russian}\\
+
+\gll Vasja opjat’ otkryl dver’.\\
+     Vasja again opened door.ACC\\
+\ea “Vasja opened the door, and that had happened before.”\\
+= {repetitive}
+
+\ex “Vasja opened the door, and the door had been open before.”\\
+  = {restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Russian}\\
+
+\gll Vasja opjat’ opustošil butylku.\\
+     Vasja again emptied bottle.ACC\\
+\ea “Vasja emptied the bottle, and that had happened before.”\\
+= {repetitive}
+
+\ex “Vasja emptied the bottle, and the bottle had been empty   before.”\\
+= {restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Ali Baba opened Sezam again.}\\
+
+\ea “Ali Baba opened Sezam, and that had happened before.”\\
+= {repetitive}
+
+\ex “Ali Baba opened Sezam, and Sezam had been open before.”\\
+= {restitutive}
+\z
+\z
+
+
+Note that unlike \textit{wieder} and \textit{again}, Russian \textit{opjat’} occurs preverbally (\REF{ex:bondarenko:5}-\REF{ex:bondarenko:7}, \REF{ex:bondarenko:16}-\REF{ex:bondarenko:17}), which does not prevent it from being able to have restitutive readings \REF{ex:bondarenko:16}-\REF{ex:bondarenko:17}.\footnote{The
+  situation is different for English and German: the pre-object position of repetitive adverbs in these languages makes the restitutive reading unavailable (i)-(ii).
+  \ea\label{ex:bondarenko:}
+  {Ali Baba again opened Sezam}\\
+
+    \ea
+    “Ali Baba opened Sezam, and that had happened before.”= repetitive   
+    \ex*“Ali Baba opened Sezam, and Sezam had been open before.”= *restitutive
+    \z
+    \z
+    
+  \ea\label{ex:bondarenko:}
+  {German}\\
+
+  …dass Ali Baba wieder Sesam öffnete…that Ali Baba again Sezam opened   
+  \ea     ‘…that Ali Baba opened Sezam, and that had happened before.’= \textit{repetitive}   
+  \ex     *‘…that Ali Baba opened Sezam, and Sezam had been open before.’= *\textit{restitutive}
+  \z
+  \z
+  Unlike English \textit{again} and German \textit{wieder}, Russian \textit{opjat’} is generally not very good in a sentence-final position and is mostly used in the preverbal position.}%end of footnote
+The fact that \textit{opjat’} generally allows for restitutive readings when it precedes the verb suggests that the word order in \REF{ex:bondarenko:5}-\REF{ex:bondarenko:7} cannot be the reason for the unavailability of restitutive readings in ditransitive clauses. To sum up, it seems highly unlikely that the properties of \textit{opjat’} prevent restitutive readings in Russian ditransitives.
+
+
+
+A second hypothesis that I will consider is that restitutive readings are unavailable in Russian ditransitives due to the absence of a stative subevent in semantics of ditransitive verbs. I will argue that this hypothesis is also wrong: ditransitives have a stative subevent in their semantics, which can independently be detected by another Russian adverb (\textit{obratno} ‘back’/‘again’) and can be introduced into syntax with the help of an eventive goal PP. Crucially, I will argue that the stative subevent is not represented in the syntactic decomposition of ditransitive verbs that take just an accusative argument and a dative one.
+
+
+
+The Russian adverb \textit{obratno} (‘back’/‘again’), although similar in its meaning to \textit{opjat’}, has different semantics, which involves a return to a state in which an entity had been before \citep{Tatevosov2016}. As a consequence, it can modify only descriptions with a target state in the sense of \citep{Kratzer2000} and allows for restitutive readings only \REF{ex:bondarenko:19}.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+Context after \citep{LechnerEtAl2015}: Three students – Masha, Vasja and Petja – were studying in the library. They wanted the window in the library to be open, but the librarian wanted the window to be closed. Masha opened the window, but the librarian closed it. Vasja opened the window, but the librarian closed it. Petja opened the window, but the librarian closed it. Finally, Masha opened the window for the second time.\\
+
+
+\ea
+\gll \#Rovno odin student otkryl okno obratno.\\
+     exactly one student opened window.ACC OBRATNO\\
+\glt “Exactly one student opened the window again.”
+
+\ex 
+\gll Rovno odin student opjat’ otkryl okno.\\
+     exactly one student again opened window.ACC\\
+\glt “Exactly one student opened the window again.”
+
+\ex Repetitive reading – \textbf{TRUE}:\\
+\glt (exactly one x > again > x opened the window > the window was open): There exists a student that opened the window and had opened it before, and it is not true that other students opened the window and had opened it before.
+
+\ex Restitutive reading – \textbf{FALSE}:\\
+\glt (exactly one x > x opened the window > again > the window was open): There exists a student that opened the window and no other student opened the window and the window had been open before.
+\z
+\z
+
+\begin{quote}
+(adapted from \citep[31]{Tatevosov2016})
+\end{quote}
+
+
+In (\citealt{AlexiadouEtAl2014,LechnerEtAl2015}) it has been observed that the repetitive and the restitutive readings exhibit different truth conditions in contexts with non-monotone quantifiers like ‘exactly/ only one student’. For the context in \REF{ex:bondarenko:19}, sentences with subjects that are non-monotone quantifiers are true only under the repetitive reading of AGAIN (\REF{ex:bondarenko:19c}-\REF{ex:bondarenko:19d}). While \textit{opjat’} can have repetitive readings and thus \REF{ex:bondarenko:19b} is appropriate under the context in \REF{ex:bondarenko:19}, \textit{obratno} is illicit in this context, which shows that it cannot have repetitive readings.
+
+
+
+\textit{Obratno} looks into the semantics of a verbal phrase with which it merges and searches for a target state in this semantic representation that it can modify. As the sentence in \REF{ex:bondarenko:20} shows, \textit{obratno} is able to find a target state in the semantic representation of Russian ditransitives.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša otdala /otpravila /vernula Vase knigu obratno.\\
+     Masha gave /sent /returned Vasja.DAT book.ACC OBRATNO\\
+\glt “Masha gave /sent /returned Vasja the book, and Vasja had had the book before.”
+\z
+
+\todo{small caps, not ALLCAPS}
+\todo{single quotation marks for translations}
+
+
+Elaboration of the analysis of properties of Russian \textit{obratno} is beyond the scope of this paper. What is important for us here is that \textit{obratno} can serve as a diagnostic for a stative subevent: it shows us that a result state is present in semantics of ditransitive predicates.\footnote{There
+  could be different plausible explanations for the unavailability of repetitive readings with \textit{obratno}. For example, it could be the case that \textit{obratno} is actually not an adverb that attaches to the VP level, but a PP modifier which in some cases signals the presence of a silent PP. Some evidence in favor of this hypothesis provide examples like (i)-(ii) (with a scrambled obratno + PP and obratno pied-piped by a PP containing a wh-word, respectively), where \textit{obratno} seems to form a constituent with an overtly realized PP:
+
+  \ea\label{ex:bondarenko:}
+  {Example}\\
+
+  [Obratno v Moskvu] Vasja rešil priexat’.OBRATNO to Moscow Vasja decided to.comeLit. “Back to Moscow Vasja decided to come.”
+  \z
+
+  \ea\label{ex:bondarenko:}
+  {Example}\\{}
+
+
+  [Obratno v kakoj gorod] oni otpravilis’?OBRATNO in what city they wentLit. “Back to what city did they go?”If \textit{obratno} is a PP modifier, then it follows that it can have exclusively restitutive readings. Under this hypothesis, \textit{obratno} signals the presence of a silent goal PP in \REF{ex:bondarenko:20}, which introduces the stative subevent into the syntactic representation that was otherwise not present. I will not pursue this idea here, leaving it for the future research.
+  \z
+}
+
+
+Another piece of evidence that Russian ditransitive verbs have a stative subevent in their semantics comes from the comparison of ditransitive constructions with a dative and an accusative arguments with constructions with the same verbs that take an accusative argument and a goal PP. Consider the following two sentences with the verb \textit{otpravlyat’} ‘send’:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša opjat’ otpravila Vase igrušku / igrušku Vase.\\
+     Masha again sent Vasja.DAT toy.ACC / toy.ACC Vasja.DAT\\
+\ea          “Masha sent Vasja the toy, and that had happened before.”
+
+\ex       *“Masha sent Vasja the toy, and Vasja had had the toy before.”
+\z
+\z
+
+\todo{no alternatives with slash in examples. Every source line should be exactly one utterance}
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Rukovoditel’ opjat’ otpravil sotrudnika v Moskvu.\\
+     manager again sent employee.ACC in Moscow\\
+\ea     “The manager sent the employee to Moscow, and that had   happened before.”
+
+\ex     “The manager sent the employee to Moscow, and the employee   had been in   Moscow before.”
+\z
+\z
+
+
+When this verb takes an accusative argument and a dative one \REF{ex:bondarenko:21}, the restitutive reading of \textit{opjat’} is unavailable. When, however, it takes an accusative argument and a goal PP \REF{ex:bondarenko:22}, \textit{opjat’} is able to single out the subevent that denotes the state of the theme argument (the employee) being at the location specified by the goal PP (Moscow).
+
+
+
+This difference can also be observed with PPs with a \textit{k} ‘to’ preposition that can take animate noun phrases as its complement. The sentences with ditransitive verbs that take a direct object and a \textit{k}{}-PP \REF{ex:bondarenko:24} seem almost synonymous to the sentences with ditransitive verbs that take two objects \REF{ex:bondarenko:23}; but the restitutive reading is available only in the former construction.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša opjat’ otpravila knigu Kate.\\
+     Masha again sent book.NOM Katja.DAT\\
+\ea “Masha sent the book to Katja, and that had happened before.”\\
+= {repetitive}
+
+\ex *“Masha sent the book to Katja, and Katja had had the book   before.”\\
+= *{restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša opjat’ otpravila knigu k Kate.\\
+     Masha again sent book.NOM to Katja.DAT\\
+\ea “Masha sent the book to Katja, and that had happened before.”\\
+  = {repetitive}
+
+\ex “Masha sent the book to Katja, and Katja had had the book   before.”\\
+ 
+ = restitutive
+\z
+\z
+
+
+If we assume that ditransitive verbs like \textit{otpravljat}’ ‘send’ have uniform semantics across their uses, then it follows that they should have a stative subevent in their semantic representation, since it is visible in some clauses with these verbs.
+
+
+
+Why does the presence of a goal PP make the restitutive reading available in sentences with ditransitive verbs? I would like to suggest that the reason for that is that PPs, unlike dative arguments, can be eventive (see \citep{McIntyre2006}) and introduce subevents that are present in the semantics of a predicate into the syntactic representation. This difference between dative arguments and goal PPs, as well as the fact that they can co-exist in the same clause (\REF{ex:bondarenko:25}-\REF{ex:bondarenko:26}, cf. English \REF{ex:bondarenko:27}-\REF{ex:bondarenko:28}), suggests that PP ditransitives and ditransitives with dative arguments cannot be derivationally related.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Oni otpravili ej vrača / vrača ej v školu\\
+     they sent she.DAT doctor.ACC / doctor.ACC she.DAT in school\\
+\glt “They sent a doctor into the school for her.”
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Ja brosil Vasje mjač / mjač Vasje v ruki\\
+     I threw Vasja.DAT ball.ACC / ball.ACC Vasja.DAT in hands\\
+\glt Lit.: “I threw Fred a ball into his hands.”\todo{Vasja == Fred??}
+\z
+
+ \ea\label{ex:bondarenko:}
+{*They sent her a doctor into the building.}\\
+\z
+
+\begin{quote}
+\citep{McIntyre2011}
+\end{quote}
+
+ \ea\label{ex:bondarenko:}
+{*I threw Fred a ball into his hands.}\\
+\z
+
+\begin{quote}
+\citep{McIntyre2011}
+\end{quote}
+
+
+To sum up, sentences with Russian ditransitive verbs can have restitutive readings in two cases. First, a special adverb (\textit{obratno}) can access a target state in the semantic representation of a verbal phrase. Second, a goal PP can introduce a target state into the syntactic representation, making the restitutive reading available even with a repetitive adverb that requires a syntactic constituent corresponding to the result state (\textit{opjat}’). This suggests that the unavailability of restitutive readings with dative arguments cannot be explained by the absence of a stative subevent in the semantics of Russian ditransitives.
+
+
+
+If Russian \textit{opjat}’ has the same properties as English \textit{again} and Russian ditransitives have a stative subevent in their event structure, then we have to conclude that for some reason this stative subevent is not represented in syntax. In other words, no small clause (or HaveP / PP / LowAppl) is present in Russian ditransitive sentences with dative arguments. Why is it the case that such a small clause cannot be built? I will first explore a semantic hypothesis: the relevant structure can be built, but cannot be interpreted due to absence of the interpretation Principle R in Russian.
+
+
+
+It has been argued (\citealt{Snyder2001,BeckSnyder2001,Beck2005}) that the interpretation Principle R is not universal: languages differ with respect to whether they have a principle allowing to successfully interpret the combination of a verb and a small clause, and this variation is responsible for the (un)availability of a number of constructions, including resultatives, verb-particle constructions, \textit{put}{}-locative constructions, \textit{make}{}-causative constructions and the double object construction, among others. Could it be the case that Russian is one of the languages that do not have the Principle R?
+
+
+
+This hypothesis is dubious, since Russian seems to require some version of this principle independently for interpreting other constructions.\footnote{As an anonymous reviewer points out, Russian does have resultative constructions. For example, one type of Russian resultatives is discussed in \citep{Tatevosov2010}. I am grateful to the anonymous reviewer for this observation, which provides an additional argument against the inaccessibility of Principle R in Russian.} One example of a case where such a principle would be needed is sentences with verbs that take lexical prefixes.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja za-brosil mjač v vorota.\\
+     Vasja PVB-throw ball in goal\\
+\glt “Vasja threw the ball into the goal.”
+\z
+
+
+\citet{Svenonius2004} has proposed that lexical prefixes in Russian (such as \textit{za} in \REF{ex:bondarenko:29}) enter the derivation as heads of small clauses that are complements of verbs. Under this view, lexical prefixes head their own projections and take PPs as their complements and direct objects as their subjects (\figref{fig:bondarenko:2}).
+
+
+\begin{figure}
+\begin{forest}
+[VP
+  [V
+    [brosil]
+  ]
+  [RP
+    [DP
+	[mja\v{c}, roof]
+    ]
+    [R'
+      [R
+	[za]
+      ]
+      [PP
+	[v vorota, roof]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\caption{Lexical prefixes as heads of small clauses}
+\label{fig:bondarenko:2}
+\end{figure}
+
+
+This analysis receives additional support from the fact that \textit{opjat}’ can have the restitutive reading in sentences with verbs with lexical prefixes. Consider \REF{ex:bondarenko:30}:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+Context: This ball was lying inside the goal for as long as we can remember. For the first time someone threw the ball out of the goal. But five minutes later…
+
+
+\gll Vasja opjat’ za-brosil mjač v vorota.\\
+     Vasja again PVB-throw ball in goal\\
+\glt “Vasja threw the ball into the goal, and the ball had been in the goal before.”
+\z
+
+
+\textit{Opjat’} in \REF{ex:bondarenko:30} has the interpretation under which an event that has occurred before is the event of the ball being inside the goal. Under the syntactic approach to the ambiguity of AGAIN, this suggests that there is a syntactic constituent – a small clause, which represents the stative subevent of the predicate and to which \textit{opjat}’ can attach (\figref{fig:bondarenko:3}).
+
+
+\begin{figure}
+\begin{forest}
+[VP
+  [V
+    [brosil]
+  ]
+  [RP,name=RP
+    [OPJAT']
+    [RP
+      [DP,name=DP
+	[mja\v{c}, roof]
+      ]
+      [R'
+	[R
+	  [za]
+	]
+	[PP
+	  [{v vorota}, roof]
+	]
+      ]
+    ]
+  ]
+]
+\node[right=of RP] (restitutive) {restitutive};
+\draw(DP.north west) to[bend left=30](restitutive.south) ;
+\end{forest}
+
+
+\caption{The small clause analysis of Russian \textit{zabrosit’} ‘throw’}
+\label{fig:bondarenko:3}
+\end{figure}
+
+
+If Russian did not have means of interpreting the combination of a verb and a small clause (the principle R or its equivalent), then the sentence in \REF{ex:bondarenko:30} should be uninterpretable and thus lead to a derivation crash. This implies that uninterpretability cannot be the problem that prevents building a small clause structure for sentences with ditransitive verbs in Russian.
+
+
+
+This brings us to the conclusion that ditransitive sentences with dative arguments in Russian do not contain a small clause for syntactic reasons: the structure with SC/HaveP/LowAppl/ particular kinds of null P/R cannot be built. As a consequence, under our assumption that the availability of the restitutive reading entails lexical decomposition in syntax,\footnote{An anonymous reviewer reasonably points out that that this assumption is not shared by everyone working on double object constructions. The conclusions that I argue for in this paper follow only if this assumption is retained.} the syntax of ditransitive clauses in Russian significantly differs from the syntax of similar sentences in English. If English might decompose \textit{give} syntactically as CAUSE to HAVE, this sort of decomposition does not take place in Russian. A more general consequence follows from this difference between the two languages: the lexical decomposition for a given predicate cannot be universal; languages differ with respect to how they map event structures of similar predicates onto syntactic representations.
+
+
+\section{Restitutive readings with Russian datives: Higher Datives}
+
+Dative arguments can differ with respect to how they are related to a result state of a given predicate. In this section I will show that restitutive readings of \textit{opjat}’ are available in sentences with higher, non-subcategorized dative arguments, but that in these clauses dative noun phrases do not denote participants of stative subevents singled out by \textit{opjat}’.
+
+
+
+Clauses with non-subcategorized dative arguments and predicates like \textit{otkryt}’ \textit{dver}’ ‘open the door’ do not exhibit the restitutive reading when dative arguments follow the verb \REF{ex:bondarenko:31}, but are able to escape the scope of AGAIN when they are scrambled to the left of it, in which case the restitutive reading becomes available \REF{ex:bondarenko:32}:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja opjat’ otkryl Maše dver’ /dver’ Maše\\
+     Vasja again opened Masha.DAT door.ACC /door.ACC Masha.DAT\\
+\ea “Vasja opened the door for Masha, that had happened before.”\\
+= {repetitive}
+
+\ex  \#“Vasja opened the door for Masha, the door had been open   before.”\\
+= {\#restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja Maše opjat’ otkryl dver’\\
+     Vasja Masha.DAT again opened door.ACC\\
+\ea “Vasja opened the door for Masha, and that had happened   before.”\\
+= {repetitive}
+
+\ex “Vasja opened the door for Masha, and the door had been open   before.”\\
+= {restitutive}
+\z
+\z
+
+
+As can be seen from the restitutive reading of \REF{ex:bondarenko:32}, the dative argument is not interpreted as a participant of the stative subevent of the predicate \textit{otkryt}’ \textit{dver}’ ‘open the door’. The interpretation in \REF{ex:bondarenko:32b} states that Vasja did some activity for Masha that resulted in the repeated state of the door being open. This suggests that non-subcategorized datives are introduced higher than the syntactically represented stative subevents.
+
+
+
+Note that scrambling of dative arguments to the left of \textit{opjat}’ in ditransitive sentences does not feed the restitutive reading:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+Context: Vasja had always had the book “Two captains” by Kaverin; he had never given it to anyone. One day he accidentally left the book at Masha’s place…
+
+\gll \#I togda Maša Vase opjat’ otdala /otpravila /vernula knigu.\\
+     and then Masha Vasja.DAT again gave /sent /returned book.ACC\\
+\glt Expected reading: “And then Masha gave /sent /returned Vasja the book, and Vasja had had the book before.”
+\z
+
+This means that stative subevents are not represented in the syntax of ditransitives with dative arguments. If they were present in the syntactic representation, they could be singled out at least in cases when datives are scrambled.
+
+
+
+The fact that the restitutive reading of \textit{opjat}’ is available in sentences with non-subcategorized datives, in contrast to ditransitive sentences with datives, is concordant with the proposal that non-subcategorized dative arguments are introduced higher than VPs (\citealt{BonehNash2017}). One piece of evidence for this comes from the fact that sentences with non-subcategorized datives show asymmetrical binding: only the dative argument can bind the accusative one, but not the other way around:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\ea Example\\
+\gll *šaman zakoldoval oxotnikov drug drugu\\
+  shaman jinxed hunters.ACC each other.DAT\\
+
+\ex Example\\
+\gll šaman zakoldoval oxotnikam drug druga\\
+  shaman jinxed hunters.DAT each other.ACC\\
+
+\ex Example\\
+\gll *šaman zakoldoval drug drugu  oxotnikov\\
+  shaman jinxed each other.DAT hunters.ACC\\
+
+\ex Example\\
+\gll ??šaman zakoldoval drug druga oxotnikam\\
+     shaman jinxed each other.ACC hunters.DAT\\
+  ‘The shaman jinxed the hunters for each other.’
+\z
+\z
+\todo{Why all the ``Example''s?}
+\begin{quote}
+(\citealt{BonehNash2017})
+\end{quote}
+
+
+It can be shown that evidence from binding and from the scope of \textit{opjat}’ go hand in hand: sentences with non-subcategorized datives, in which the dative argument asymmetrically binds the direct object, exhibit restitutive readings when the dative argument is scrambled outside the scope of \textit{opjat}’:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+Context: Two hunters have been born jinxed and have been this way for a long time. One day a good witch relieved them from the jinx. But after some time, they had a huge fight and were very angry with each other. Each of them came to the shaman to ask him to jinx the other one.\\
+
+\gll Šaman oxotnikam opjat’ zakoldoval drug druga\\
+     shaman hunters.DAT again jinxed each other.ACC\\
+\glt “Shaman jinxed the hunters for each other, and the hunters had been jinxed before.” (but the shaman had never jinxed them before)
+\z
+
+
+Thus, non-subcategorized datives are introduced higher than VPs and cannot be understood as participants of stative subevents of predicates. But if a predicate has a stative subevent, it can be successfully singled out by \textit{opjat}’ in case the dative argument is scrambled to the left of the repetitive adverb.
+
+
+\section{Restitutive readings with Russian datives: Locative applicatives}
+
+In the previous section I have discussed a case of the restitutive reading in structures with a dative argument which was not a participant in the stative subevent singled out by \textit{opjat}’. In this section I will show that Russian also has a construction in which a dative argument is a participant of the stative subevent detected by the restitutive \textit{opjat}’.
+
+
+
+The construction under consideration, which I will call the locative applicative construction (“N-applicatives” in the terminology of \citep{Pshehotskaya2012}), usually involves a motion verb that takes a direct object, a goal PP and an optional dative argument:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša opjat’ položila knigu Vase na stol.\\
+     Masha again put book.ACC Vasja.DAT on table\\
+\ea “Masha put the book on the table for Vasja, and that had   happened before.”\\
+= {repetitive}
+
+\ex “Masha put the book on the table for Vasja, and Vasja had had   the book on the table before.”\\
+= {restitutive}
+\z
+\z
+
+
+In \REF{ex:bondarenko:36} the dative argument is interpreted as a possessor of the small clause that represents the stative subevent “the book is on the table”: Vasja’s having the book on the table is being repeated.
+
+
+
+The locative applicative construction is not found exclusively with motion verbs, it is also sometimes possible with lexical causatives \REF{ex:bondarenko:37} and change-of-state predicates \REF{ex:bondarenko:38}.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja opjat’ posadil dočku Maše na stul.\\
+     Vasja again seated daughter.ACC Masha.DAT on chair\\
+\ea “Vasja seated the daughter on the chair for Masha, and that had   happened before.”\\
+= {repetitive}
+
+\ex “Vasja seated the daughter on the chair for Masha, and Masha   had had the daughter sit on the chair before.”\\
+= {restitutive}
+\z
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Maša opjat’ pobelila stenu mame v komnate.\\
+     Masha again whitened wall.ACC mother.DAT in room\\
+\ea “Masha whitened the wall in the room for the mother, and that   had happened before.”\\
+= {repetitive}
+
+\ex “Masha whitened the wall in the room for the mother, and the   mother had had the wall white in the room before.”\\
+= {restitutive}
+\z
+\z
+
+
+The dative argument in this structure is merged lower than the direct object, as the evidence from binding suggests: the dative reciprocal can be bound by the direct object, but the accusative reciprocal cannot be bound by the dative argument:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja posadil devoček drug drugu na stulja.\\
+     Vasja seated girls.ACC each other.DAT on chairs\\
+\glt Lit. “Vasja seated the girls\textsubscript{i} to each other\textsubscript{i} on the chairs.”
+
+
+(Vasja seated the girls in such a way that the first girl has the second one sitting on (her) chair and the second girl has the first one sitting on (her) chair.)
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll *Vasja posadil drug druga devočkam na stulja.\\
+     Vasja seated each other.ACC girls.DAT on chairs\\
+\glt Expected lit. reading: “Vasja seated each other\textsubscript{i} to the girls\textsubscript{i} on the chairs.”
+\z
+
+
+The example in \REF{ex:bondarenko:41} shows that the dative reciprocal that is bound by the direct object can be a participant of the stative subevent identified by \textit{opjat}’:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja opjat’ posadil devoček drug drugu na stulja.\\
+     Vasja again seated girls.ACC each other.DAT on chairs\\
+\ea Lit. “Vasja seated girls\textsubscript{i} to each other\textsubscript{i} on the chairs, and that   had happened before.”\\
+= {repetitive}
+
+\ex Lit. “Vasja seated girls\textsubscript{i} to each other\textsubscript{i} on the chairs, and the   girls\textsubscript{i} had sat by each other\textsubscript{i} on the chairs before.”\\
+= {restitutive}
+\z
+\z
+
+
+It can also be demonstrated that the dative argument forms a constituent with the locative phrase. When a dative argument is a wh-word, it can pied-pipe the prepositional phrase to the left periphery:
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll [Komu na stol] Maša položila knigu?\\
+     who.DAT on table Masha put book.ACC\\
+\glt Lit. “To whom on the table did Masha put the book?”
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll [Komu na stul] Vasja posadil devočku?\\
+     who.DAT on chair Vasja seated girl.ACC\\
+\glt Lit. “To whom on the chair did Vasja seat the girl?”
+\z
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll [Komu v školu] Maša otdala syna?\\
+     who.DAT in school Masha gave son.ACC\\
+\glt Lit. “To whom to school did Masha send the son?”
+\z
+
+
+I would like to propose that in the locative applicative construction the dative noun phrase is an applicative argument that is introduced on top of the PP that introduces a stative subevent into the syntactic representation. Since applicative heads introduce an abstract HAVE relation between the applied argument and the complement of Appl (\citealt{Cuervo2003,McIntyre2006}) among others), the fact that the dative argument in Russian locative applicatives is interpreted as a holder of the state that the PP denotes (\REF{ex:bondarenko:45}; \figref{fig:bondarenko:4}) is expected if the dative argument is applied to an eventive PP.
+
+
+ \ea\label{ex:bondarenko:}
+{Example}\\
+
+\gll Vasja opjat’ povesil kartinu Kate na stenu.\\
+     Vasja again hang picture Katja.DAT on wall\\
+\ea “Vasja hang the picture for Katja on the wall, and that had   happened before.”\\
+= {repetitive}
+
+\ex “Vasja hang the picture for Katja on the wall, and Katja had the   picture on the wall before.”\\
+= {restitutive}
+\z
+\z
+
+\begin{figure}
+\begin{forest}%for tree= pretty nice empty nodes
+[VP
+  [DP
+    [{kartinu\textsubscript{i}}, roof]
+  ]
+  [V'
+    [V
+      [povesil]
+    ]
+    [
+      [OPJAT']
+      [ApplP
+	[DP
+	  [Kate, roof]
+	]
+	[Appl'
+	  [Appl]
+	  [PP
+	    [PRO\textsubscript{i}]
+	    [P'
+	      [P
+		[na]	  
+	      ]
+	      [DP
+		[stenu, roof]
+	      ]
+	    ]
+	  ]
+	]
+      ]
+    ]
+  ]
+]
+\end{forest}
+\caption{The locative applicative construction \REF{ex:bondarenko:45}.}
+\label{fig:bondarenko:4}
+\end{figure}
+
+
+The restitutive reading of \textit{opjat}’ in this construction arises when \textit{opjat}’ attaches to an applicative phrase (\figref{fig:bondarenko:4}) and takes scope over the stative subevent denoted by a goal PP. The dative argument falls inside the scope of \textit{opjat}’ since it is an applied argument of an eventive PP and not an argument of the verb.
+
+
+\section{Conclusions}
+
+In this paper I have argued against the small clause analysis of Russian ditransitives. I have observed that although Russian repetitive adverb \textit{opjat}’ has the same ability to look inside the decomposition structure as English \textit{again}, it cannot have the restitutive reading in clauses with ditransitive verbs that take two objects, in contrast to \textit{again} in the English double object construction. I have shown that Russian ditransitives have stative subevents in their semantics and that the unavailability of a small clause structure for Russian ditransitives cannot be explained by a semantic restriction, since the Principle R or its equivalent that allows to interpret a combination of a verb and a small clause is independently required for other constructions of Russian. I have concluded that the small clause structure is not present in Russian ditransitives due to syntactic reasons: the syntax cannot build such a structure. The unavailability of the restitutive reading in Russian ditransitives suggests that they are not equivalent to the English double object construction or the to-PP construction. They also cannot be analyzed as involving a silent (incorporated) P, since the structure with a PP would make the restitutive reading available. Although the new empirical data discussed in this paper is compatible with several analyses of ditransitives (for example, with applicative analysis \citep{Bruening2010} or non-derivational analysis along the lines of (\citealt{BonehNash2017}) and does not settle on a particular one, it clearly shows that Russian ditransitives do not involve a small clause structure and differ from English ditransitives significantly.
+
+
+
+I have also examined two other constructions with dative arguments in Russian, both of which allow for the restitutive reading of \textit{opjat}’. In sentences with “high” datives the restitutive reading is available if the dative argument escapes the scope of \textit{opjat}’. The dative does not denote a participant of the stative subevent in this case, which means that it cannot be introduced into the structure lower than the first subevent of the predicate. In the locative applicative construction, the dative argument is a participant of the subevent introduced by a PP and is inside the scope of the restitutive \textit{opjat}’. I have argued that in this construction the dative is an applied argument to the PP, and therefore is always lower than the direct object, forms a constituent with the PP and can be inside the scope of \textit{opjat}’ under the restitutive reading.
+
+
+\section*{Acknowledgments}
+Many thanks to the feedback of Sergei Tatevosov and the audience of FDSL12.
+
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\begin{listLFOixleveli}
+\item \begin{styleLangSciBulletList}
+@book{Alexiadou2014,
+	address = {Variation In Repetitive Morphemes},
+	author = {Alexiadou, Artemis, Elena Anagnostopoulou  and  Winfried Lechner},
+	publisher = {Some Implications For The Clausal Architecture. Talk presented on \textit{the} \textit{Workshop} \textit{on} \textit{the} \textit{State} \textit{of} \textit{the} \textit{Art} \textit{in} \textit{Comparative} \textit{Syntax}, University of York, September 25, 2014},
+	title = {\biberror{no title}},
+	year = {2014}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{http://users.uoa.gr/~wlechner/\citealt{York2014,
+	author = {\url{http://users.uoa.gr/~wlechner/\citealt{York},
+	note = {} again.pdf}},
+	year = {2014}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+Beck Sigrid \& William Snyder. 2001. The resultative parameter and restitutive ‘again’. In Caroline Féry \& Wolfgang Sternefeld (eds.) \textit{Auditur} \textit{vox} \textit{sapientiae:} \textit{A} \textit{festschrift} \textit{for} \textit{Arnim} \textit{von} \textit{Stechow}. Berlin: Akademie Verlag. 48 – 69.
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Beck2004,
+	author = {Beck, Sigrid  and  Kyle Johnson},
+	journal = {\textit{Linguistic} \textit{Inquiry} \textit{35\REF{ex:bondarenko:1}}},
+	pages = {7--124},
+	title = {Double Objects Again},
+	volume = {9},
+	year = {2004}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101162,
+	author = {\url{https://doi.org/10},
+	note = {/002438904322793356}},
+	year = {1162}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Beck2005,
+	author = {Beck Sigrid},
+	journal = {\textit{Journal} \textit{of} \textit{Semantics} \textit{22}},
+	pages = {3--51},
+	title = {There and back again: {{A}} semantic analysis},
+	volume = {.},
+	year = {2005}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101093,
+	author = {\url{https://doi.org/10},
+	note = {/jos/ffh016}},
+	year = {1093}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Boneh2017,
+	author = {Boneh, Nora  and  Léa Nash},
+	journal = {Natural Language \& Linguistic Theory},
+	pages = {1--55},
+	sortname = {Boneh, Nora  and  Lea Nash},
+	title = {The syntax and semantics of dative {DP}s in {Russian} ditransitives},
+	volume = {.},
+	year = {2017}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{https://link.springer.com/article/10.1007/s11049-017-9360-5}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Bruening2010,
+	author = {Bruening, Benjamin},
+	journal = {\textit{Linguistic} \textit{Inquiry} \textit{41}},
+	pages = {9–562},
+	title = {Ditransitive asymmetries and a theory of idiom formation},
+	volume = {51},
+	year = {2010}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101162,
+	author = {\url{https://doi.org/10},
+	note = {/LING_a_00012}},
+	year = {1162}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Cuervo2003,
+	address = {Cambridge, Massachusetts},
+	author = {Cuervo, María},
+	publisher = {MIT dissertation},
+	sortname = {Cuervo, Maria},
+	title = {Datives at Large},
+	year = {2003}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{http://hdl.handle.net/1721,
+	author = {\url{http://hdl.handle.net/},
+	note = {1/7991}},
+	year = {1721}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+Fabricius-Hansen, Cathrine. 2001. Wi(e)der and again(st). In Caroline Féry \& Wolfgang Sternefeld (eds.) \textit{Auditur} \textit{vox} \textit{sapientiae:} \textit{A} \textit{festschrift} \textit{for} \textit{Arnim} \textit{von} \textit{Stechow}. Berlin: Akademie Verlag. 101-130.
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+Harley, Heidi. 1996. If You Have, You Can Give. In Brian Agbayani \& Sze-Wing Tang (eds.) \textit{Proceedings} \textit{of} \textit{WCCFL} \textit{XV}. CSLI, Stanford, CA. 193-207.
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{http://heidiharley.com/pubs/if-you-have-you-can-give/}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Harley2002,
+	author = {Harley, Heidi},
+	journal = {\textit{Yearbook} \textit{of} \textit{Linguistic} \textit{Variation} \textit{2.}},
+	pages = {9–68},
+	title = {Possession and the Double Object Construction},
+	volume = {2},
+	year = {2002}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101075,
+	author = {\url{https://doi.org/10},
+	note = {/livy.2.04har}},
+	year = {1075}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Harley2015,
+	author = {Harley, Heidi  and  Hyun Kyoung Jung},
+	journal = {\textit{Linguistic} \textit{Inquiry} \textit{46\REF{ex:bondarenko:4}}},
+	pages = {3--730},
+	title = {In support of the {PHAVE} approach to the double object construction},
+	volume = {70},
+	year = {2015}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101162,
+	author = {\url{https://doi.org/10},
+	note = {/LING_a_00198}},
+	year = {1162}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+Jäger, Gerhard \& Reinhard Blutner. 2000. Against lexical decomposition in syntax. In Adam Zachary Wyner (ed.). \textit{Proceedings} \textit{of} \textit{the} \textit{Israeli} \textit{Association} \textit{for} \textit{Theoretical} \textit{Linguistics} \textit{\REF{ex:bondarenko:15}}. 113–137.
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://pdfs.semanticscholar.org/9d83/8bd942bb50d8f7602f927ca452f1813,
+	author = {\url{https://pdfs.semanticscholar.org/9d83/8bd942bb50d8f7602f927ca452f},
+	note = {9d868.pdf}},
+	year = {1813}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Jung2004,
+	author = {Jung, Yeun-Jin  and  Shigeru Miyagawa},
+	journal = {\textit{Proceedings} \textit{of} \textit{the} \textit{Seoul} \textit{International} \textit{Conference} \textit{on} \textit{Generative} \textit{Grammar}},
+	pages = {1--120},
+	title = {Decomposing Ditransitive Verbs},
+	volume = {10},
+	year = {2004}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://pdfs.semanticscholar.org/a22b/5ddbaa2122,
+	author = {\url{https://pdfs.semanticscholar.org/a22b/5ddbaa},
+	note = {2d8a2c058b05d97f788232e392.pdf}},
+	year = {2122}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Kayne1984,
+	address = {\textit{Connectedness} \textit{and} \textit{binary} \textit{branching}. Dordrecht},
+	author = {Kayne, Richard},
+	publisher = {Foris. 129 – 164. Kratzer, Angelika. 2000. \textit{Building} \textit{statives}. Paper given at \textit{the} \textit{Berkeley} \textit{Linguistic} \textit{Society,February2000}},
+	title = {Unambiguous paths},
+	year = {1984}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{http://semanticsarchive.net/Archive/GI5MmI0M/kratzer.building.statives.pdf}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Lechner2015,
+	author = {Lechner, Winfried, Giorgos Spathas, Artemis Alexiadou  and  Elena Anagnostopoulou},
+	journal = {Paper presented at \textit{GLOW} \textit{2015}, Paris. April},
+	pages = {5--17},
+	title = {On Deriving The Typology Of Repetition And Restitution},
+	volume = {1},
+	year = {2015}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{http://users.uoa.gr/~wlechner/GLOW2015,
+	author = {\url{http://users.uoa.gr/~wlechner/GLOW},
+	note = {again.pdf}},
+	year = {2015}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Lomashvili2010,
+	address = {Tucson, Arizona},
+	author = {Lomashvili, Leila},
+	publisher = {University of Arizona dissertation},
+	title = {The morphosyntax of complex predicates in {South} Caucasian Languages},
+	year = {2010}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{http://arizona.openrepository.com/arizona/bitstream/1015,
+	author = {\url{http://arizona.openrepository.com/arizona/bitstream/},
+	note = {0/193878/1/azu_etd_11125_sip1_m.pdf}},
+	year = {1015}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+McIntyre, Andrew. 2006. The interpretation of German datives and English have. In Daniel Hole, André Meinunger \& Werner Abraham (eds.). \textit{Datives} \textit{and} \textit{Other} \textit{Cases}. Amsterdam: Benjamins. 2006. 185-211.
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{http://www3.unine.ch/files/live/sites/andrew.mcintyre/files/shared/mcintyre/mcintyre.dative.band.prepub.pdf}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@misc{McIntyre2011,
+	author = {McIntyre, Andrew},
+	note = {Silent possessive PPs in English double object (+particle) constructions. Handout online:},
+	year = {2011}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+h\href{ttp://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.461.7286 & rep=rep1 & type=pdf} {ttp://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.461.7286\& rep=rep1\& type=pdf} .
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Rapp1999,
+	author = {Rapp, Irene  and  Arnim von Stechow},
+	journal = {\textit{Journal} \textit{of} \textit{Semantics} \textit{16}},
+	pages = {9–204},
+	title = {‘Fast ‘‘almost’’ and the visibility parameter for functional adverbs’},
+	volume = {14},
+	year = {1999}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101093,
+	author = {\url{https://doi.org/10},
+	note = {/jos/16.2.149}},
+	year = {1093}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Pesetsky1995,
+	address = {Cambridge, MA},
+	author = {Pesetsky, David},
+	publisher = {The MIT Press},
+	title = {Zero Syntax: {{{E}}}xperiencers and Cascades},
+	year = {1995}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{https://mitpress.mit.edu/books/zero-syntax}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Pshekhotskaya2012,
+	address = {Moscow, Russia},
+	author = {Pshekhotskaya, Ekaterina},
+	publisher = {Lomonosov Moscow State University dissertation},
+	title = {Kosvennoje dopolnenije kak subkategorizovannyj i nesubkategorizovanny aktant (na materiale russkogo yazyka)},
+	year = {2012}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Pylkkänen2008,
+	address = {Cambridge, MA},
+	author = {Pylkkänen, Liina},
+	publisher = {MIT Press. 2008},
+	sortname = {Pylkkanen, Liina},
+	title = {Introducing Arguments},
+	year = {2008}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/10.7551/mitpress/9780262162,
+	author = {\url{https://doi.org/10.7551/mitpress/978026},
+	note = {548.001.0001}},
+	year = {2162}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Schäfer2008,
+	address = {Amsterdam/Philadelphia},
+	author = {Schäfer, Florian},
+	publisher = {John Benjamins},
+	sortname = {Schafer, Florian},
+	title = {The Syntax of (Anti-)Causatives},
+	year = {2008}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101075,
+	author = {\url{https://doi.org/10},
+	note = {/la.126}},
+	year = {1075}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Snyder2001,
+	author = {Snyder, William},
+	journal = {\textit{Language} \textit{77}},
+	pages = {4–342},
+	title = {On the nature of syntactic variation: {{{E}}}vidence from complex predicates and complex word formation},
+	volume = {32},
+	year = {2001}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{http://www.haskins.yale.edu/Reprints/HL1234.pdf}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@misc{Svenonius2004,
+	author = {Svenonius, Peter Arne},
+	note = {Slavic prefixes inside and outside VP, ms. 2004. University of Tromsø; to appear in \textit{Nordlyd} at},
+	year = {2004}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\href{http://www.ub.uit.no/munin/nordlyd/}{www.ub.uit.no/munin/nordlyd}\href{http://www.ub.uit.no/munin/nordlyd/}{/}.
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+Tatevosov, Sergei. 2010. Building Intensive Resultatives. In Wayles Browne (ed.) \textit{Formal} \textit{Approaches} \textit{to} \textit{Slavic} \textit{Linguistics} \textit{(FASL)}. The Cornell Meeting. Ann Arbor: Michigan Slavic Publications, 289-302.
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+\url{http://darwin.philol.msu.ru/staff/people/tatevosov/intensive_resultatives.pdf}
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@book{Tatevosov2016,
+	address = {Re-entering a state},
+	author = {Tatevosov, Sergei},
+	publisher = {case for obratno. \textit{FASL25}. 2016},
+	title = {\biberror{no title}},
+	year = {2016}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@incollection{Stechow1995,
+	address = {Amsterdam / Philadelphia},
+	author = {Stechow, Arnim von},
+	booktitle = {\textit{The} \textit{Lexicon} \textit{in} \textit{the} \textit{Organization} \textit{of}  \textit{Language}},
+	editor = {Urs Egli, Peter E. Pause, Christoph Schwarze, Arnim von Stechow and Götz Wienold},
+	pages = {81--117},
+	publisher = {John Benjamins Publishing Company},
+	title = {Lexical decomposition in syntax},
+	year = {1995}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{http://doi.org/101075,
+	author = {\url{http://doi.org/10},
+	note = {/cilt.114.05ste}},
+	year = {1075}
+}
+
+\end{styleLangSciBulletList}
+\item \begin{styleLangSciBulletList}
+@article{Stechow1996,
+	author = {Stechow, Arnim von},
+	journal = {\textit{Journal} \textit{of} \textit{Semantics} \textit{13}},
+	pages = {7--138},
+	title = {The different readings of wieder “again”: {{A}} structural account},
+	volume = {8},
+	year = {1996}
+}
+
+\end{styleLangSciBulletList}
+
+\begin{styleLangSciBulletList}
+@misc{\url{https://doi.org/101093,
+	author = {\url{https://doi.org/10},
+	note = {/jos/13.2.87}},
+	year = {1093}
+}
+
+\end{styleLangSciBulletList}
+\end{listLFOixleveli}
+\end{verbatim}
+\end{document}

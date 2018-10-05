@@ -6,7 +6,10 @@ import shutil
 import codecs
 import uuid
 import sys 
-import langscibibtex
+try:
+  from langsci import langscibibtex
+except ImportError:
+  import langscibibtex
 
 WD = '/home/doc2tex'
 WD = '/tmp'
@@ -673,6 +676,7 @@ class Document:
         modtext = re.sub("(\\\\emph\{[^}]+)\}\\\\emph\{","\\1",modtext)
         
         
+        
         #TODO propagate textbf in gll
         
         for s in ('textit','textbf','textsc','texttt','emph'):
@@ -683,6 +687,8 @@ class Document:
         modtext = re.sub("\\\\includegraphics\[.*?width=\\\\textwidth\]\{","%please move the includegraphics inside the {figure} environment\n%%\includegraphics[width=\\\\textwidth]{figures/",modtext)
         
         modtext = re.sub("\\\\item *\n+",'\\item ',modtext)
+        
+        modtext = re.sub(r"\\begin{itemize}\n\\item (\\section{.*?})\\end{itemize}",r"\1",modtext)
         
         modtext = re.sub("\\\\footnote\{ +",'\\\\footnote{',modtext)
         #put spaces on right side of formatting
