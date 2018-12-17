@@ -191,11 +191,32 @@ Note that the implementation via the [$\pm$\textsc{participant}] feature lends i
 
 \begin{figure}
 % \captionsetup{format=hang}
-\caption{Feature hierarchy \& morphological mapping (modelled after \citealt{harleyritter02} and \citealt{Bartosova2015})}
-\Tree [.$\pm$\textsc{person} [.{$+$\textsc{person} $\sim\pm$\textsc{participant}} [.{$+$\textsc{participant} $\sim\pm$\textsc{speaker}} {$+$\textsc{speaker}\\{\Large\texttt{⇊}}\\1\textsuperscript{st}} [.$\pm$\textsc{hearer} {$+$\textsc{hearer}\\{\Large\texttt{⇊}}\\2\textsuperscript{nd}} {$-$\textsc{hearer}\\{\Large\texttt{⇊}}\\\textsc{ma}} ] ] [.{$-$\textsc{participant} $\sim\pm$\textsc{gender}} {$+$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{f}} {$-$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{mi}} ] ] {$-$\textsc{person}\\{\Large\texttt{⇊}}\\\textsc{n}} ] \label{hierarchy}
+\caption{Feature hierarchy \& morphological mapping (modelled after \citealt{harleyritter02} and \citealt{Bartosova2015})\label{hierarchy}}
+\begin{forest}
+[±\textsc{person}
+    [$+$\textsc{person} $\sim\pm$\textsc{participant}
+        [$+$\textsc{participant} $\sim\pm$\textsc{speaker} 
+            [$+$\textsc{speaker}\\{\Large\texttt{⇊}}\\1\textsuperscript{st}]
+            [$\pm$\textsc{hearer}
+                [$+$\textsc{hearer}\\{\Large\texttt{⇊}}\\2\textsuperscript{nd}] [$-$\textsc{hearer}\\{\Large\texttt{⇊}}\\\textsc{ma}]
+            ]
+        ] [$-$\textsc{participant} $\sim\pm$\textsc{gender} 
+            [ $+$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{f}] [$-$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{mi}]
+    ]
+    ]
+[$-$\textsc{person}\\{\Large\texttt{⇊}}\\\textsc{n}]
+]
+\end{forest}
+% % \Tree[.$\pm$\textsc{person} 
+% %     [.{$+$\textsc{person} $\sim\pm$\textsc{participant}} 
+% %         [.{$+$\textsc{participant} $\sim\pm$\textsc{speaker}} {$+$\textsc{speaker}\\{\Large\texttt{⇊}}\\1\textsuperscript{st}} 
+% %             [.$\pm$\textsc{hearer} {$+$\textsc{hearer}\\{\Large\texttt{⇊}}\\2\textsuperscript{nd}} {$-$\textsc{hearer}\\{\Large\texttt{⇊}}\\\textsc{ma}} 
+% %         ] 
+% %     ] [.{$-$\textsc{participant} $\sim\pm$\textsc{gender}} {$+$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{f}} {$-$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{mi}} 
+% %     ] 
+% %     ] {$-$\textsc{person}\\{\Large\texttt{⇊}}\\\textsc{n}} 
+% % ] 
 \end{figure}
-
-
 
 \subsection{Accounting for the resolution pattern}
 

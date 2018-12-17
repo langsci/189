@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{qtree}
+\usepackage{tikz-qtree}
+\usepackage{tikz-qtree-compat}
+\usetikzlibrary{arrows,arrows.meta,decorations.markings,shapes,calc,fit}
+\usepackage{libertine,amsfonts}
+\usepackage[libertine]{newtxmath}
+
+\begin{document}
+\begin{tikzpicture}[align=center]
+\Tree[.$\pm$\textsc{person} [.{$+$\textsc{person} $\sim\pm$\textsc{participant}} [.{$+$\textsc{participant} $\sim\pm$\textsc{speaker}} {$+$\textsc{speaker}\\{\Large\texttt{⇊}}\\1\textsuperscript{st}} [.$\pm$\textsc{hearer} {$+$\textsc{hearer}\\{\Large\texttt{⇊}}\\2\textsuperscript{nd}} {$-$\textsc{hearer}\\{\Large\texttt{⇊}}\\\textsc{ma}} ] ] [.{$-$\textsc{participant} $\sim\pm$\textsc{gender}} {$+$\textsc{gender}\\{\Large{$\downdownarrows$}}\\\textsc{f}} {$-$\textsc{gender}\\{\Large\texttt{⇊}}\\\textsc{mi}} ] ] {$-$\textsc{person}\\{\Large\texttt{⇊}}\\\textsc{n}} ] 
+\end{tikzpicture}
+\end{document}

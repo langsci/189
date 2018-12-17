@@ -1,59 +1,51 @@
 \usepackage{amsmath}
-%\usepackage{amsmath,amssymb,amsthm}
-% \usepackage{amsmath,amsthm,amssymb}
 %\usepackage{bbding}% add all extra packages you need to load to this file  
-% \usepackage{blindtext}
-\usepackage{booktabs}
 \usepackage{csquotes}
-\usepackage{draftwatermark}
+% \usepackage{draftwatermark}
 %\usepackage{draftwatermark}
-\usepackage[main=english,russian,ngerman,polish,czech]{babel}
+\usepackage[main=english,
+%                  czech, %% Check for newer Version of [czech] in babel
+                 russian,
+                 ngerman,
+                 polish,
+            ]{babel}
 \usepackage{eurosym}
 \usepackage{fixltx2e}
 \usepackage{float}
 % \usepackage[german,english]{babel}
 \usepackage{hhline}
-% \usepackage{jambox}
-%\usepackage[koi8-r]{inputenc}
+\usepackage{./langsci/styles/jambox}
 \usepackage{langsci/styles/langsci-cgloss}
-\usepackage{./langsci/styles/langsci-lgr} 
+\usepackage{./langsci/styles/langsci-lgr}
 % \usepackage{langsci-linguex}
 \usepackage{./langsci/styles/langsci-optional}
-% \usepackage[libertine]{newtxmath}
-% \usepackage{libertinus}
-% \usepackage{linguex}
-%\usepackage{linguex}
 \usepackage[linguistics]{forest}
 \usepackage{longtable}
 % % \usepackage{marvosym} % incompatible
 \usepackage{multicol}
 \usepackage{multirow}
-%\usepackage{natbib}
 \usepackage[normalem]{ulem}
-\usepackage{pgfplots}
-\usepackage{pifont} %dings
 \usepackage{pifont} %for checkmark and cross
 % \usepackage[polish,czech,english]{babel}
-% \usepackage{qtree}
 % \usepackage[russian,english]{babel}
 \usepackage{slantsc} %needed for slanted smallcaps
-% \usepackage{stix}
 \usepackage{stmaryrd} %defines \llbracket and \rrbracket, needed for semantic interpretation brackets [[.]]
 \usepackage{subfigure}
-%\usepackage[T1]{fontenc}
-%\usepackage[T2A]{fontenc}
 \usepackage{tabto}
 \usepackage{tabularx} 
-% \usepackage{textcomp}
-% \usepackage{tikz}
+\usepackage{qtree}
 \usepackage{tikz-qtree}
 \usepackage{tikz-qtree-compat}
-%\usepackage{times}
-% \usepackage{unicode-math}
-\usepackage{url}
-%\usepackage[utf8]{inputenc}
-\usepackage{vwcol}
-% \usepackage{vwcol}
-\usepackage{wasysym}%symbols
 \usetikzlibrary{arrows,arrows.meta,decorations.markings,shapes,calc,fit}
+\usepackage{url}
+\usepackage{vwcol}
+\usepackage{wasysym}%symbols
+\usepackage{siunitx}
+\makeatletter
+\let\pgfmathModX=\pgfmathMod@
+\usepackage{pgfplots,pgfplotstable}%
+\let\pgfmathMod@=\pgfmathModX
+\makeatother
+\usepgfplotslibrary{colorbrewer,groupplots} 
+% % \usepackage{MdSymbol} % \ngg, \gg
 \usepackage{langsci-gb4e}
