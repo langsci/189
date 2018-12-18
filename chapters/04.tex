@@ -36,11 +36,13 @@ In this paper, we bring in novel data concerning the distribution and semantic p
 
 Lexicons of many natural languages distinguish between two types of expressions involving quantification which correspond to English adverbs such as \textit{twice} and \textit{doubly}, see \REF{twice-double-expressions}. Surprisingly, though cardinal numerals have received a lot of attention in the semantic literature on quantification (\citealt{landman2004indefinites}, \citealt{ionin_composition_2006}, \citealt{hofweber2005number}, and \citealt{rothstein2012numericals} among many others), expressions such as those in \REF{twice-double-expressions} remain strikingly understudied both from a descriptive and theoretical perspective (with notable exceptions of \citealt{landman_indefinite_2006}, \citealt{bhatt2007degree}, and \citealt{donazzan_ways_2013}).\footnote{\citet{wagiel-toappear-entities} proposes an analysis of Slavic adjectival multipliers similar to English \textit{double}, however, we are not aware of any semantic treatment of adverbial expressions corresponding to English \textit{doubly}.}
 
-\ea \label{twice-double-expressions} \ea twice/doubly\hfill(English)
-\ex deux fois/doublement\hfill(French)
-\ex dvaždy/vdvojne\hfill(Russian)
-\ex kétszer/kétszeresen\hfill(Hungarian)
-\ex hai-lần/gấp-đôi\hfill(Vietnamese)
+\ea \label{twice-double-expressions}
+\settowidth\jamwidth{(Vietnamese)}
+\ea twice/doubly             \jambox{(English)}
+\ex deux fois/doublement \jambox{(French)}
+\ex dvaždy/vdvojne       \jambox{(Russian)}
+\ex kétszer/kétszeresen  \jambox{(Hungarian)}
+\ex hai-lần/gấp-đôi          \jambox{(Vietnamese)}
 \z
 \z
 
@@ -342,11 +344,11 @@ double suicide is twice bigger suicide\\ }
 
 \subsection{Predicate position}\label{predicate-position}
 
-Finally, the last observation concerns the attributive and predicative use of adjectival DNs. In all the examples provided in the previous sections, \textit{dvojnásobný} appears as a nominal modifier which seems to be the most natural syntactic context for such an expression. Nevertheless, it is not unusual to find \textit{dvojnásobný} in predicate position as well, as attested in an CNC sentence in \REF{dvojnasobny-predicate}. Here, the DN serves as the main predicate of a sentence and assigns a property to a subject denoting an amount, i.e., \textit{hodnota} `value'. In particular, it is predicated of the value of saved property it is twice as high relative to the value corresponding to the damages, i.e., it amounts to {100 000 CZK}.
+Finally, the last observation concerns the attributive and predicative use of adjectival DNs. In all the examples provided in the previous sections, \textit{dvojnásobný} appears as a nominal modifier which seems to be the most natural syntactic context for such an expression. Nevertheless, it is not unusual to find \textit{dvojnásobný} in predicate position as well, as attested in an CNC sentence in \REF{dvojnasobny-predicate}. Here, the DN serves as the main predicate of a sentence and assigns a property to a subject denoting an amount, i.e., \textit{hodnota} `value'. In particular, it is predicated of the value of saved property it is twice as high relative to the value corresponding to the damages, i.e., it amounts to {100\,000 CZK}.
 
 \ea \gll {\dots} škoda dosahuje asi 50 tisíc korun. Hodnota uchráněného majetku je \textbf{dvojnásobná}.\label{dvojnasobny-predicate}\\
 {} damage reaches approximately 50 thousand crowns value saved property is double\\\hfill(CNC)
-\glt `{\dots} the damages reach approximately 50 000 CZK. The value of saved property is twice as high.'
+\glt `{\dots} the damages reach approximately 50\,000 CZK. The value of saved property is twice as high.'
 \z
 
 \noindent Sentences such as \REF{dvojnasobny-predicate} are far less frequent in the CNC than examples with adjectival DNs in attributive position. However, we regard their existence as an important piece of evidence, supporting the predicative nature of DNs.
@@ -357,7 +359,7 @@ Before we move on to the analysis of the EN/DN distinction, let us briefly recap
 
 \begin{table}[t]
 \caption{Properties of event and degree numerals}\label{table:properties}
-\begin{tabularx}{\textwidth}{@{}lll@{}}
+\begin{tabular}{lcc}
 \lsptoprule
 Property & Event numerals & Degree numerals\tabularnewline
 \midrule
@@ -371,7 +373,7 @@ Modify degree events & yes & yes\tabularnewline
 Events (N) & no & yes\tabularnewline
 Roles (N) & no & yes\tabularnewline
 \lspbottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
 
 
@@ -417,7 +419,7 @@ Second, following \cite{solt2015q-adjectives} we assume that individuals are ass
 
 \noindent Furthermore, we assume the standard syntactic analysis of comparatives. In particular, we adopt the so-called small DegP view on which the comparative marker \textit{-er} and the than-clause form a constituent at LF and the entire DegP serves as an argument of the gradable predicate (e.g., \citealt{heim_degree_2000}), as illustrated in \REF{tree-small-DegP}. 
 
-\ea \scriptsize \Tree[.AP [.DegP [.Deg \textit{-er} ] [.PP {[\textit{than}\ldots]} ] ] [.A \textit{tall} ]]\label{tree-small-DegP}
+\ea \Tree[.AP [.DegP [.Deg \textit{-er} ] [.PP {[\textit{than}\ldots]} ] ] [.A \textit{tall} ]]\label{tree-small-DegP}
 \z
 
 \noindent Finally, following \cite{pancheva2006phrasal} we assume that Slavic comparatives such as \REF{comp-ex} involve an elided clause introducing the maximal interval corresponding to a standard of comparison on a proper scale. Within such an approach, Czech clausal comparatives like \REF{comp} are analyzed as in \REF{comp-LF}.
@@ -437,13 +439,10 @@ Petr is taller than Marie\\
 
 With all the ingredients in place, let us now consider how the pieces fit together. Assuming that \citeauthor{heim_kratzer1998semantics}'s (\citeyear{heim_kratzer1998semantics}) rule of Predicate Modification applies also to degree predicates, the adopted analysis creates a plausible attachment site for DNs. Since they are expressions of type $\langle d,t\rangle$, we propose that they can modify the PP node resulting in a syntactically more complex argument for Deg, as illustrated in the tree in \REF{tree-comp-dvojnasobne}. Crucially, the derived expression is also of type $\langle d,t\rangle$ which is suitable for the interpretation by the comparative morpheme.
 
-%  \begin{figure}[t]
 \begin{exe}
-\ex \label{tree-comp-dvojnasobne} \scriptsize 
-\Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle \langle d,t\rangle,\langle \langle d,t\rangle,t\rangle\rangle$} \textit{-ší}\\`-er' ] [.{PP\\$\langle d,t\rangle$} [.{Degree Numeral\\$\langle d,t\rangle$} \textit{dvojnásobně}\\`doubly' ] [.{PP\\$\langle d,t\rangle$} [.{P\\$\langle d,\langle d,t\rangle\rangle$} \textit{než}\\`than' ] \qroof{Marie is $d_1$-tall}.CP\\$d$ ]]]
+\ex\label{tree-comp-dvojnasobne}%
+\resizebox{\linewidth}{!}{\Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle \langle d,t\rangle,\langle \langle d,t\rangle,t\rangle\rangle$} \textit{-ší}\\`-er' ] [.{PP\\$\langle d,t\rangle$} [.{Degree Numeral\\$\langle d,t\rangle$} \textit{dvojnásobně}\\`doubly' ] [.{PP\\$\langle d,t\rangle$} [.{P\\$\langle d,\langle d,t\rangle\rangle$} \textit{než}\\`than' ] \qroof{Marie is $d_1$-tall}.CP\\$d$ ]]]}%
 \end{exe}
-
-%  \end{figure}
 
 The composition proceeds as follows. The preposition \textit{než} takes the maximal interval to which Marie is tall as its input and yields a set of degrees which are part of that interval. Subsequently, the DN combines with the PP via Predicate Modification, and thus multiplies each member of the set by two. The output is a set of intervals that are two times bigger than the intervals corresponding to Marie's height and can serve as the first argument of the comparative morpheme \textit{-ší}. The comparative morpheme applies the maximization operation \cnst{max} which picks the degree, i.e., the maximal interval, to which Marie is tall multiplied by two. As a result, the whole sentence is true iff the degree on a scale of height corresponding to the correlate, i.e., Petr, is equal or exceeds the value corresponding to Marie, as stated in the truth-conditions in \REF{tree-comp-dvojnasobne-semantics-a}. However, this is not the way one would normally understand a sentence such as \REF{comp-ex}. In order to account for that deficiency, we propose that \REF{tree-comp-dvojnasobne-semantics-a} gets strengthened to \REF{tree-comp-dvojnasobne-semantics-b}, i.e., the $\geq$ relation is replaced by $=$, which finally gives rise to an expedient result. We assume that the pragmatic enrichment results from a scalar implicature, a consequence of the competition between \textit{dvojnásobně} and higher DNs similar to what has been proposed in the neo-Gricean theories of cardinals (e.g., \citealt{horn1972semantic}).
 
@@ -490,8 +489,7 @@ The final assumption concerns the denotation of the equative marker. We follow t
 \noindent Given the components discussed above, the reason why DNs are incompatible with equatives is simply because of type mismatch. Consider the structure of the DegP illustrated in \REF{tree-DegP-eq}. Since the equative does not involve the node of type $\langle d,t\rangle$ but rather the CP of type $d$, the DN cannot combine with any expression within the DegP via Predicate Modification. In principle, Function Application would still be applicable. Nevertheless, if a definite description denoted by the CP saturated the degree variable, the resulting expression could not combine with the equative marker. In any case, the derivation of \REF{dvojnasobne-eq} would inevitably crash.
 
 \begin{exe} \label{tree-DegP-eq}
-\ex
-\scriptsize 
+\ex 
 \Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle d,\langle \langle d,t\rangle,t\rangle\rangle$} {\textit{tak}\dots{} \textit{jako}\\`as\dots{} as'} ] \qroof{Marie is $d_1$-tall}.{CP\\$d$} ]
 \end{exe}
 
@@ -597,7 +595,7 @@ demand after subsidies increased.\textsc{ipfv} often\\
 \begin{table}[b]
 \caption{Scopal properties of adverbs of quantification}\label{table:scale}
 % \footnotesize
-\begin{tabularx}{\textwidth}{@{}llll@{}}
+\resizebox{\textwidth}{!}{\begin{tabular}{lccc}
 \lsptoprule
 Property & Degree adverbs & Event numerals & Frequency adverbs\tabularnewline
 \midrule
@@ -605,7 +603,7 @@ Access degrees & yes & yes & no\tabularnewline
 Scope over indefinites & no & yes & yes\tabularnewline
 Relational readings & no & no & yes\tabularnewline
 \lspbottomrule
-\end{tabularx}
+\end{tabular}}
 \end{table}
 
 \noindent In light of the discussed data, we argue that the assumption that ENs simply quantify over times (which implies iteration) is insufficient to explain all the observed contrasts. Instead, we propose that there is a scale of adverbs of quantification with respect to how wide scope they can take, see \tabref{table:scale}. In particular, degree adverbs including DNs have the narrowest scope, ENs rank in the middle since they can scope over indefinites, and finally frequency adverbs can have the widest scope resulting in the possibility of relational readings but cannot access internal arguments of degree predicates. Here we see a promising correlation, specifically, the scope of an expression seems to correspond to its sortal polymorphicity. At this point, we can only speculate on what the cause and what the consequence is, and hence we remain agnostic with respect to the nature of the relationship in question. Nevertheless, we intend to investigate this issue in future work.
@@ -631,13 +629,11 @@ Petr is twice taller than {} so tall how Marie\\
 \noindent Such a semantics fits nicely both with comparatives and equatives. In \REF{tree-comp-dvakrat}, the EN adjoins to the CP denoting the maximal interval corresponding to the standard of comparison, i.e., Marie's maximal height, before the partitive preposition applies. The EN returns the maximal degree to which Marie is tall multiplied by two and it is not until then that \textit{než} yields a set of degrees the maximal degree corresponding to Marie is part of. The resulting $\langle d,t\rangle$ expression is compatible with the input requirement of the comparative marker \textit{-ší}. 
 
 % \begin{figure}[t]
-\begin{exe} \ex \label{tree-comp-dvakrat}
-\scriptsize 
-\Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle \langle d,t\rangle,\langle \langle d,t\rangle,t\rangle\rangle$} \textit{-ší}\\`-er' ] [.{PP\\$\langle d,t\rangle$} [.{P\\$\langle d,\langle d,t\rangle\rangle$} \textit{než}\\`than' ] [.{CP\\$d$} [.{Event Numeral\\$\langle d,d\rangle$} \textit{dvakrát}\\`twice' ] \qroof{Marie is $d_1$-tall}.CP\\$d$ ]]]
+\begin{exe} \ex \label{tree-comp-dvakrat} 
+\resizebox{\linewidth}{!}{\Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle \langle d,t\rangle,\langle \langle d,t\rangle,t\rangle\rangle$} \textit{-ší}\\`-er' ] [.{PP\\$\langle d,t\rangle$} [.{P\\$\langle d,\langle d,t\rangle\rangle$} \textit{než}\\`than' ] [.{CP\\$d$} [.{Event Numeral\\$\langle d,d\rangle$} \textit{dvakrát}\\`twice' ] \qroof{Marie is $d_1$-tall}.CP\\$d$ ]]]}
 \end{exe}
 
-\begin{exe} \ex \label{tree-eq-dvakrat}
-\scriptsize 
+\begin{exe} \ex \label{tree-eq-dvakrat} 
 \Tree[.{DegP\\$\langle \langle d,t\rangle,t\rangle$} [.{Deg\\$\langle d,\langle \langle d,t\rangle,t\rangle\rangle$} \textit{tak\dots{} jako}\\{`as\dots{} as'} ] [.{CP\\$d$} [.{Event Numeral\\$\langle d,d\rangle$} \textit{dvakrát}\\`twice' ] \qroof{Marie is $d_1$-tall}.CP\\$d$ ]]
 \end{exe}
 % \end{figure}

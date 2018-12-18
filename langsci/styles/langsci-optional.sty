@@ -370,14 +370,16 @@
 	ylabel={#2}, 
 	axis lines*=left, 
         width  = \textwidth,
-	height = .3\textheight,
+	height = 5cm,
     	nodes near coords, 
+    	nodes near coords style={text=black},
 	xtick=data,
 	x tick label style={},  
 	ymin=0,
+	ybar,
 	symbolic x coords={#3},
 	]
-	\addplot+[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {
+	\addplot[fill=black,draw=none] coordinates {
 	    #4
 	}; 
     \end{axis} 

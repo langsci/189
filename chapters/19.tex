@@ -41,12 +41,12 @@ According to subsequent Serbian studies, processing speed of a wordform correlat
 Later on, this problematic measure was abandoned, and the focus was shifted to paradigmatic relations between wordforms captured by inflectional and relative entropy measures (see, e.g. \citealt{milin2009simultaneous}). The inflectional entropy $H(P)$ reflects the amount of information associated with the inflectional paradigm of the target lexeme (see~\REF{equation:inflEntropy}), where $f$ stands for frequency, the wordform $w_i$ belongs to the paradigm $P$ of a lexeme $w$) and correlates negatively with response latencies: when a lexeme has a higher value of the inflectional entropy, its wordforms are processed faster, and vice versa  \citep{del2004putting}. The relative entropy $D(IP||IC)$ captures the divergence between the frequency distribution of the target lexeme $w$ and the frequency distribution of its inflectional class $IC$ (see~\REF{equation:relEntr}), where $e_i$ stands for inflectional exponent), and it correlates positively with response latencies: wordforms belonging to paradigms with higher values of relative entropy are processed more slowly \citep{milin2009simultaneous}. When surface and lemma frequency combined with entropy measures are taken into account, case differences appear to play no additional role \citep{milin2009simultaneous}; yet, this claim was made on a small subset of wordform: wordforms in -\textit{u} `{\accc.\sg}’ and -\textit{e} ‘{\genn.\sg}’\slash ‘{\nomm/\accc.\pl}’ for feminine nouns, wordforms in -\textit{om} `{\ins.\sg}’ and -\textit{u} `{\datt/\locc.\sg}’ for masculine nouns.
 
 	\ea\label{equation:inflEntropy}\begin{equation*}
-		H(P) = -\sum_{\substack {w_i \in P}} \frac{f(w_i)}{f(w)} log _2\frac{f(w_i)}{f(w)}
+		H(P) = -\sum_{w_i \in P} \frac{f(w_i)}{f(w)} \log _2\frac{f(w_i)}{f(w)}
         \end{equation*}
 	\z
 
 \ea\label{equation:relEntr}\begin{equation*}
-		D(IP||IC) = \sum_{\substack {w_i \in P}} \frac{f(w_i)}{f(w)} log _2 \frac{f(w_i)/f(w)}{f(e_i)/f(e)}
+		D(IP||IC) = \sum_{w_i \in P} \frac{f(w_i)}{f(w)} \log _2 \frac{f(w_i)/f(w)}{f(e_i)/f(e)}
         \end{equation*}
 	\z
 
@@ -69,11 +69,11 @@ Russian was not chosen incidentally, but due to its particular pattern of case s
 		\lsptoprule
         ~	&	~	&	Nom    &	Acc	 & Gen  &	Dat &	Loc &	Ins	\\
         \midrule
-		\multirow{2}{*}{singular} & feminine	&	-a  &	-u	&	-y	&	-e	& -e    &	-oj\\
-		&	masculine			&	-$\varnothing$  & -$\varnothing$    &	-a	&	-u	&   -e  &	-om	\\
+		\multirow{2}{*}{Singular} & Feminine	&	-a  &	-u	&	-y	&	-e	& -e    &	-oj\\
+		&	Masculine			&	-$\varnothing$  & -$\varnothing$    &	-a	&	-u	&   -e  &	-om	\\
         \midrule
-        \multirow{2}{*}{plural} & feminine	& -y    & -y    &	-$\varnothing$ & -am  & -ax & -ami \\
-        &	masculine & -y  & -y &	-ov & -am    & -ax & -ami\\
+        \multirow{2}{*}{Plural} & Feminine	& -y    & -y    &	-$\varnothing$ & -am  & -ax & -ami \\
+        &	Masculine & -y  & -y &	-ov & -am    & -ax & -ami\\
 		\lspbottomrule
     \end{tabular}
 \end{table}
@@ -108,21 +108,16 @@ We also decided to compare -\textit{e} `\datt/\locc.\fem' to -\textit{u} '\datt.
 \textbf{\textit{Zero nominative inflection.}} Russian overt and non-overt nominative inflection (-\textit{a} `\nomm.\fem' and -\textit{$\varnothing$}`\nomm.\accc.\masc') was already compared in \citet{gor2017processing}, and no difference was observed. However, their study employed an auditory lexical decision task, and it is unclear whether their results are modality-neutral.
 
 \section{Method}
+\subsection{Participants} Ninety-six Russian native speakers, all right-handed (aged 17–25 years) were tested. Half of them participated in experiment 1, the other half in experiment 2.
 
-\textbf{Participants.}  
-Ninety-six Russian native speakers, all right-handed (aged 17–25 years) were tested. Half of them participated in experiment 1, the other half in experiment 2.
+\subsection{Stimuli} We used all six case forms of inanimate nouns belonging to two declensional classes (54 feminine nouns ending in -\textit{a} and 54 masculine nouns ending in -\textit{$\varnothing$} matched for lemma frequency). All stimuli were base nouns, they did not undergo any stem alternations and had fixed stress on the stem (the 1a inflectional class according to \citealt{zaliznyak1977grammatical}). Length in nominative differed from 4 to 6 (each group comprised one third of words with each length). 108 nouns with pseudoendings and 108 inflected pseudostems served as nonwords. In experiment 1, nouns were presented in singular; in experiment 2, in plural. Latin-square design was employed with the number of lists corresponding to the number of case forms.
 
-\textbf{Stimuli.} 
-We used all six case forms of inanimate nouns belonging to two declensional classes (54 feminine nouns ending in -\textit{a} and 54 masculine nouns ending in -\textit{$\varnothing$} matched for lemma frequency). All stimuli were base nouns, they did not undergo any stem alternations and had fixed stress on the stem (the 1a inflectional class according to \citealt{zaliznyak1977grammatical}). Length in nominative differed from 4 to 6 (each group comprised one third of words with each length). 108 nouns with pseudoendings and 108 inflected pseudostems served as nonwords. In experiment 1, nouns were presented in singular; in experiment 2, in plural. Latin-square design was employed with the number of lists corresponding to the number of case forms.
+\subsection{Procedure} Each participant was assigned to one of the six experimental lists and was tested individually. Experiments were run using DMDX software (Forster, Forster, 2003). Before the test phase (324 trials), participants received written instructions and performed a practice phase (20 trials). In each trial, participants had to decide whether the string of letters presented on the screen was a real Russian word or not. They were instructed to respond as fast and accurately as possible. Each trial started with a fixation sign (+) that was displayed on the screen for 600 ms. The stimulus remained on the screen until response or time-out (2500 ms). The interstimulus interval was set to 2500 ms.
 
-\textbf{Procedure.} 
-Each participant was assigned to one of the six experimental lists and was tested individually. Experiments were run using DMDX software (Forster, Forster, 2003). Before the test phase (324 trials), participants received written instructions and performed a practice phase (20 trials). In each trial, participants had to decide whether the string of letters presented on the screen was a real Russian word or not. They were instructed to respond as fast and accurately as possible. Each trial started with a fixation sign (+) that was displayed on the screen for 600 ms. The stimulus remained on the screen until response or time-out (2500 ms). The interstimulus interval was set to 2500 ms.
-
-\textbf{Data analysis.} 
-We used linear mixed-effects modeling for the analysis of reaction times and logistic mixed regression for the accuracy data  \citep{baayen2008analyzing}. Statistical analysis was implemented in the package lme4  \citep{bates2014lme4} in the statistical software R \citep{team2014r}. \textit{T}-values, \textit{z}-values, \textit{p}-values, and standard errors were determined using the package lmerTest \citep{kuznetsova2015package}. Fixed and random effects were included only if they significantly improved the model fit in a backward stepwise model selection procedure. Models were selected using Chi-square log-likelihood ratio tests with regular maximum likelihood parameter estimation. 
+\subsection{Data analysis} We used linear mixed-effects modeling for the analysis of reaction times and logistic mixed regression for the accuracy data  \citep{baayen2008analyzing}. Statistical analysis was implemented in the package lme4  \citep{bates2014lme4} in the statistical software R \citep{team2014r}. \textit{T}-values, \textit{z}-values, \textit{p}-values, and standard errors were determined using the package lmerTest \citep{kuznetsova2015package}. Fixed and random effects were included only if they significantly improved the model fit in a backward stepwise model selection procedure. Models were selected using Chi-square log-likelihood ratio tests with regular maximum likelihood parameter estimation. 
 
 Subject and lexeme were treated as random effects. Lemma and wordform frequency, length in letters and syllables, mean Levenstein distance to the nearest 20 lexeme-neighbors, 
-inflectional and relative entropy measures were additionally included as covariates.\footnote{Lemma frequency was taken from the frequency dictionary \citep{lyashevskaya2009frequency}. Wordform frequency was manually extracted from the main undisambiguated subcorpus of Russian national corpora (www.ruscorpora.ru); for ambiguous endings the cumulative frequency was taken,  relying on \citegen{milin2009simultaneous} experience. To avoid zero frequencies, one was added to all counts, as suggested by \citet*{brysbaert2013dealing}.}$^,$\footnote{The Levenstein distance was calculated in the vwr package \citep{keuleers2013vwr} in the R software \citep{team2014r}.}$^,$\footnote{In order to calculate relative entropy, frequency of exponents was taken form the database created by \citet*{samojlova2014frequencies}.} Trial order (\textit{z} transformation on log numbers) was included to control for longitudinal task effects such as fatigue or habituation. All these covariates were log-transformed. To avoid multicollineriarity, all counts except for trial were transformed into 5 principal components, explaining 93.5\% of variance \citep{baayen2008analyzing}. The first principal component (PC1) captured orthographic characteristics of the stimulus. The second component (PC2) was inversely related to frequency. The third component (PC3) was inversely related to relative entropy and positively related to inflectional entropy. Paired contrasts were carried out in the package lsmeans \citep{lenth2016least}. For planned comparisons, FDR adjusted p-values are reported \citep{benjamini1995controlling}. 
+inflectional and relative entropy measures were additionally included as covariates.\footnote{Lemma frequency was taken from the frequency dictionary \citep{lyashevskaya2009frequency}. Wordform frequency was manually extracted from the main undisambiguated subcorpus of Russian national corpora\footnote{\url{http://ruscorpora.ru}}; for ambiguous endings the cumulative frequency was taken,  relying on \citegen{milin2009simultaneous} experience. To avoid zero frequencies, one was added to all counts, as suggested by \citet*{brysbaert2013dealing}.}$^,$\footnote{The Levenstein distance was calculated in the vwr package \citep{keuleers2013vwr} in the R software \citep{team2014r}.}$^,$\footnote{In order to calculate relative entropy, frequency of exponents was taken form the database created by \citet*{samojlova2014frequencies}.} Trial order (\textit{z} transformation on log numbers) was included to control for longitudinal task effects such as fatigue or habituation. All these covariates were log-transformed. To avoid multicollineriarity, all counts except for trial were transformed into 5 principal components, explaining 93.5\% of variance \citep{baayen2008analyzing}. The first principal component (PC1) captured orthographic characteristics of the stimulus. The second component (PC2) was inversely related to frequency. The third component (PC3) was inversely related to relative entropy and positively related to inflectional entropy. Paired contrasts were carried out in the package lsmeans \citep{lenth2016least}. For planned comparisons, FDR adjusted p-values are reported \citep{benjamini1995controlling}. 
 
 As our words were presented without context, case labels for ambiguous endings (feminine -\textit{y} and -\textit{e}, masculine -\textit{y} and -\textit{$\varnothing$}) are somewhat arbitrary. Hence, we do not expect any differences between feminine locative and dative -\textit{e}, nor between masculine nominative and accusative -\textit{$\varnothing$}. However, this is needed for counterbalancing issues, as patterns of syncretism do not coincide across our two noun groups. In the statistical analysis, the mean pooled over the two ``conditions'' will be used.
 
@@ -402,107 +397,89 @@ Lemma frequency counts are given in brackets.\\
 
 \section*{Appendix B: Results of statistical analyses}
 \begin{sidewaystable}
-	\caption{Experiment 1 (singular nouns): final models for RTs and accuracy}
-	\label{tab:LMERsg}
-	\begin{tabular}{l*{9}r} 
-  	\lsptoprule
-    ~			& \multicolumn{5}{c}{RTs} & \multicolumn{4}{c}{Accuracy}\\
-    \midrule
-    \multicolumn{10}{l}{\textit{Random effects}}\\
-    Groups & \multicolumn{1}{c}{Name}	&\multicolumn{2}{c}{Variance} &	\multicolumn{1}{c}{SD} &
-    		 ~  & \multicolumn{1}{c}{Name}	& \multicolumn{1}{c}{Variance} & \multicolumn{1}{c}{SD}\\
-    Subject	&\multicolumn{1}{l}{(Intercept)}&\multicolumn{2}{r}{0.001}	&	0.031 &
-    		 ~  & \multicolumn{1}{l}{(Intercept)}& 0.143	&	0.378\\
-	Lexeme	&\multicolumn{1}{l}{(Intercept)}&\multicolumn{2}{r}{0.027}	&	0.163 &
-			~  & \multicolumn{1}{l}{(Intercept)}& 0.96  &	0.98  \\
-	Residual &\multicolumn{1}{l}{}	&\multicolumn{2}{r}{0.032}	&	0.179 &
-   			 ~  & \multicolumn{4}{l}{}\\
-    \\         
-	\multicolumn{10}{l}{\textit{Fixed effects}}\\
-   	   	~	&\multicolumn{1}{c}{\textit{B}} &	\multicolumn{1}{c}{SE} 	& \multicolumn{1}{c}{df} & \multicolumn{1}{c}{\textit{t}-value}	& \multicolumn{1}{c}{Pr(>|t|)}	&    \multicolumn{1}{c}{\textit{B}} &	\multicolumn{1}{c}{SE}		&    \multicolumn{1}{c}{ \textit{z-value}}	& \multicolumn{1}{c}{Pr(>|z|)} \\
-    (Intercept)	&	6.58	&	0.026	& 64 &	257.46		& <.001	&
-    				4.71	&	0.414	& 11.4	&	<.001\\
-	Trial		&	$-$0.012	&	0.003	& 4541 &	$-$4.45	& <.001	&
-    			\multicolumn{4}{l}{}\\
-	PC2			&	0.018	&	0.003	& 121  &	6.03	& <.001   &
-    				$-$0.364	&	0.062	&$-$5.86	& <.001\\
-	PC3			&	$-$0.022	&	0.006	& 103  &	$-$3.68	& <.001	&
-					0.509	&	0.104	&4.89	&<.001\\	
-	Case[Acc]	&	0.067	&	0.013	& 4538 &	5.22	& <.001	&
-    				$-$1.282	&	0.442	&$-$2.9	&.004\\
-	Case[Dat]	&	0.1		&	0.013	& 4490 &	7.7		& <.001	&
-					$-$1.906	&	0.417	&$-$4.57	&<.001\\
-	Case[Gen]	&	0.048	&	0.013	& 4565 &	3.72	& <.001	&
-					$-$1.356	&	0.445	&$-$3.05	&.002\\
-	Case[Ins]	&	0.042	&	0.013	& 4472 &	3.32	& .001		&
-					$-$0.952	&	0.454	&$-$2.1	&.036\\
-	Case[Loc]	&	0.089	&	0.013	& 4488 &	6.82	& <.001	&
-					$-$2.07	&	0.413	&$-$5.02	&<.001\\
-	Gender[m]	&	$-$0.023	&	0.014	& 816  &	$-$1.63	& .104		&
-					0.001	&	0.536	&0.003	&.998\\
-	Case[Acc] : Gender[m]	& $-$0.077	& 0.018 &	4510 &	$-$4.32 & <.001	&
-	      					  0.655		&	0.643	&1.02	&.308\\
-	Case[Dat] : Gender[m]	& $-$0.0005	& 0.018 &	4521 &	$-$0.027 & .979	&
-								0.503	&	0.594	&0.847	&.397\\
-	Case[Gen] : Gender[m]	& 0.100		& 0.018 &	4514 &	5.56  &	<.001	&
-							 $-$0.545	&	0.607	&$-$0.898	&.369\\
-	Case[Ins] : Gender[m] &	0.056	& 0.018 &	4470 &	3.13  &	.002	&
-								0.539	&	0.667	&0.808	&.419\\	
-	Case[Loc] : Gender[m]	& 0.082		& 0.019 &	4493 &	4.38  &	<.001	&
-							$-$0.915	&	0.571	&$-$1.6	&.109\\
-	PC3 : Gender[m]			& 0.024		& 0.008 &	103  &	3.2	  & .002	&
-								$-$0.472	&	0.13	&$-$3.63	&<.001\\
+ \caption{Experiment 1 (singular nouns): final models for RTs and accuracy}
+ \label{tab:LMERsg}
+ \begin{tabularx}{\textwidth}{lXlSSXlSS} 
+   \lsptoprule
+    ~   & & \multicolumn{3}{c}{RTs} & & \multicolumn{3}{c}{Accuracy} \\
+    
+    \multicolumn{8}{l}{\textit{Random effects}}\\    \midrule
+    Groups   & & \multicolumn{1}{c}{Name}         & \multicolumn{1}{c}{Variance} & \multicolumn{1}{c}{SD} & ~   & \multicolumn{1}{c}{Name}        & \multicolumn{1}{c}{Variance} & \multicolumn{1}{c}{SD}\\
+    Subject  & & \multicolumn{1}{l}{(Intercept)}  & 0.001                      & 0.031                  &     & \multicolumn{1}{l}{(Intercept)} & 0.143                        & 0.378\\
+    Lexeme   & & \multicolumn{1}{l}{(Intercept)}  & 0.027                      & 0.163                  &     & \multicolumn{1}{l}{(Intercept)} & 0.96                         & 0.98  \\
+    Residual & & \multicolumn{1}{l}{}             & 0.032                      & 0.179                  &     & \\
+    \end{tabularx}
+    \begin{tabularx}{\textwidth}{l SS S[table-format=4.0] *{6}{S}}
+ \midrule\multicolumn{10}{l}{\textit{Fixed effects}}\\
+        ~ &\multicolumn{1}{c}{\textit{B}} & \multicolumn{1}{c}{SE}  & \multicolumn{1}{c}{df} & \multicolumn{1}{c}{\textit{t}-value} & \multicolumn{1}{c}{Pr(>|t|)} &    \multicolumn{1}{c}{\textit{B}} & \multicolumn{1}{c}{SE}  &    \multicolumn{1}{c}{ \textit{z-value}} & \multicolumn{1}{c}{Pr(>|z|)} \\\midrule
+ (Intercept) & 6.58 & 0.026 & 64 & 257.46  & <.001 &
+        4.71 & 0.414 & 11.4 & <.001\\
+ Trial  & -0.012 & 0.003 & 4541 & -4.45 & <.001 &
+       \multicolumn{4}{l}{}\\
+ PC2   & 0.018 & 0.003 & 121  & 6.03 & <.001   &
+        -0.364 & 0.062 &-5.86 & <.001\\
+ PC3   & -0.022 & 0.006 & 103  & -3.68 & <.001 &
+     0.509 & 0.104 &4.89 &<.001\\ 
+ Case[Acc] & 0.067 & 0.013 & 4538 & 5.22 & <.001 &
+        -1.282 & 0.442 &-2.9 &.004\\
+ Case[Dat] & 0.1  & 0.013 & 4490 & 7.7  & <.001 &
+     -1.906 & 0.417 &-4.57 &<.001\\
+ Case[Gen] & 0.048 & 0.013 & 4565 & 3.72 & <.001 &
+     -1.356 & 0.445 &-3.05 &.002\\
+ Case[Ins] & 0.042 & 0.013 & 4472 & 3.32 & .001  &
+     -0.952 & 0.454 &-2.1 &.036\\
+ Case[Loc] & 0.089 & 0.013 & 4488 & 6.82 & <.001 &
+     -2.07 & 0.413 &-5.02 &<.001\\
+ Gender[m] & -0.023 & 0.014 & 816  & -1.63 & .104  &
+     0.001 & 0.536 &0.003 &.998\\
+ Case[Acc] : Gender[m] & -0.077 & 0.018 & 4510 & -4.32 & <.001 &
+              0.655  & 0.643 &1.02 &.308\\
+ Case[Dat] : Gender[m] & -0.0005 & 0.018 & 4521 & -0.027 & .979 &
+        0.503 & 0.594 &0.847 &.397\\
+ Case[Gen] : Gender[m] & 0.100  & 0.018 & 4514 & 5.56  & <.001 &
+        -0.545 & 0.607 &-0.898 &.369\\
+ Case[Ins] : Gender[m] & 0.056 & 0.018 & 4470 & 3.13  & .002 &
+        0.539 & 0.667 &0.808 &.419\\ 
+ Case[Loc] : Gender[m] & 0.082  & 0.019 & 4493 & 4.38  & <.001 &
+       -0.915 & 0.571 &-1.6 &.109\\
+ PC3 : Gender[m]   & 0.024  & 0.008 & 103  & 3.2   & .002 &
+        -0.472 & 0.13 &-3.63 &<.001\\
    \lspbottomrule
-	\end{tabular}    
+ \end{tabularx}    
 \end{sidewaystable}
 
 \begin{sidewaystable}
 	\caption{Experiment 2 (plural nouns): final models for RTs and accuracy}
-	\label{tab:LMERpl}
-	\begin{tabular}{l*{9}r} 
-  	\lsptoprule
-    ~			& \multicolumn{5}{c}{RTs} & \multicolumn{4}{c}{Accuracy}\\
-    \midrule
-    \multicolumn{10}{l}{\textit{Random effects}}\\
-    Groups  &   \multicolumn{1}{c}{Name}	        &   \multicolumn{2}{c}{Variance} &	                             \multicolumn{1}{c}{SD}       &~&  \multicolumn{1}{c}{Name}	 &                                \multicolumn{1}{c}{Variance}        &	\multicolumn{1}{c}{SD}   &~\\
-    Subject &   \multicolumn{1}{l}{(Intercept)}     &   \multicolumn{2}{r}{0.002}
-            &	0.041                               &~& \multicolumn{1}{l}{(Intercept)}
-            &   0.323	                            &	0.569   &~\\
-	Lexeme  &   \multicolumn{1}{l}{(Intercept)}     &   \multicolumn{2}{r}{0.021}
-	        &	0.145                               &~& \multicolumn{1}{l}{(Intercept)}
-	        &   0.612                               &	0.782  &~\\
-	Residual&   \multicolumn{1}{l}{}                &   \multicolumn{2}{r}{0.035}
-	        &	0.188                               &~& \multicolumn{4}{l}{}    \\
-    \\         
-	\multicolumn{10}{l}{\textit{Fixed effects}}\\
-   	~			&\multicolumn{1}{c}{\textit{B}} &	\multicolumn{1}{c}{SE} 	& \multicolumn{1}{c}{df} &    \multicolumn{1}{c}{\textit{t}-value}	& \multicolumn{1}{c}{Pr(>|t|)}	&    \multicolumn{1}{c}{\textit{B}} &	\multicolumn{1}{c}{SE}		&    \multicolumn{1}{c}{ \textit{z-value}}	& \multicolumn{1}{c}{Pr(>|z|)} \\
-    (Intercept)	&	6.68	&	0.024	& 76 &	279.9		& <.001	&
-    				3.265	&	0.271	& 12.03	&	<.001\\
-	PC2			&	0.019	&	0.004	& 126	& 4.98		& <.001 &
-    				$-$0.285	&	0.068	& $-$4.21	& <.001\\
-	PC3			&	$-$0.022	&	0.007	&	111		&	$-$2.91	&	.004	&	
-					0.442	&	0.12	&	3.7		&	<.001\\
-	Case[Acc]	&	0.034	&	0.013	&	4342	&	2.52	&	.012	&	
-					0.205	&	0.332	&	0.618	&	.537\\
-	Case[Dat]	&	0.094	&	0.014	&	3769	&	6.49	&	<.001	&	
-					$-$0.109	&	0.3		&	$-$0.364	&	.716\\
-	Case[Gen]	&	0.087	&	0.015	&	3645	&	5.76	&	<.001	&	
-					$-$1.505	&	0.268	&	$-$5.61	&	<.001\\
-    Case[Ins]	&	0.103	&	0.014	&	4419	&	7.42	&	<.001	&	
-					$-$0.385	&	0.294	&	$-$1.31	&	.191\\
-	Case[Loc]	&	0.067	&	0.014	&	4311	&	4.77	&	<.001	&	
-					$-$0.345	&	0.292	&	$-$1.18	&	.237\\
-	Gender[m]	&	0.017	&	0.016	&	589		&	1.06	&	.288	&	
-					0.179	&	0.345	&	0.52	&	.603\\
-	Case[Acc] : Gender[m]	& $-$0.046	&	0.019	&	4342	&	$-$2.41	&	.016	&	$-$0.481	&	0.455	&	$-$1.06	&	.29\\
-	Case[Dat] : Gender[m]	& $-$0.011	&	0.019	&	4437	&	$-$0.58	&	.565	&	$-$0.357	&	0.42	&	$-$0.85	&	.395\\
-	Case[Gen] : Gender[m]	& $-$0.026	&	0.020	&	4269	&	$-$1.29	&	.197	&	1.534	&	0.428	&	3.58	&	<.001\\
-	Case[Ins] : Gender[m] &	0.015	&	0.019	&	4391	&	0.76	&	.448	&	$-$0.183	&	0.42	&	$-$0.44	&	.662\\
-	Case[Loc] : Gender[m]	& $-$0.010	&	0.019	&	4426	&	$-$0.53	&	.594	&	$-$0.143	&	0.415	&	$-$0.34	&	.731\\
-	PC3 : Gender[m]			& 0.021	&	0.009	&	107		&	2.28	&	.025	&
-							 $-$0.423	&	0.155	&	$-$2.73	&	.006\\
+ \label{tab:LMERpl}
+ \begin{tabularx}{\textwidth}{lXlSSXlSS}
+   \lsptoprule
+    ~   & & \multicolumn{3}{c}{RTs} & & \multicolumn{3}{c}{Accuracy} \\    
+\multicolumn{8}{l}{\textit{Random effects}}\\    \midrule
+Groups   & & \multicolumn{1}{c}{Name}           &   \multicolumn{1}{c}{Variance} &   \multicolumn{1}{c}{SD} & & \multicolumn{1}{c}{Name}          &  \multicolumn{1}{c}{Variance} & \multicolumn{1}{c}{SD} \\
+Subject  & & \multicolumn{1}{l}{(Intercept)}    &   0.002                        & 0.041                    & & \multicolumn{1}{l}{(Intercept)}   &   0.323                       & 0.569  \\
+Lexeme   & & \multicolumn{1}{l}{(Intercept)}    &   0.021                        & 0.145                    & & \multicolumn{1}{l}{(Intercept)}   &   0.612                       & 0.782  \\
+Residual & &                                    &   0.035                        & 0.188                    & & \\\midrule
+   \end{tabularx}
+   \begin{tabularx}{\textwidth}{l SS S[table-format=4.0] SS  X *{4}{S}}
+ \multicolumn{10}{l}{\textit{Fixed effects}}\\
+    ~   &\multicolumn{1}{c}{\textit{B}} & \multicolumn{1}{c}{SE}  & \multicolumn{1}{c}{df} &    \multicolumn{1}{c}{\textit{t}-value} & \multicolumn{1}{c}{Pr(>|t|)} &  &  \multicolumn{1}{c}{\textit{B}} & \multicolumn{1}{c}{SE}  &    \multicolumn{1}{c}{ \textit{z-value}} & \multicolumn{1}{c}{Pr(>|z|)} \\\midrule
+ (Intercept)           & 6.68   & 0.024 & 76   & 279.9  &  <.001 & &    3.265 & 0.271 & 12.03  & <.001\\
+ PC2                   & 0.019  & 0.004 & 126  & 4.98   &  <.001 & &  -0.285  & 0.068 & -4.21  & <.001\\
+ PC3                   & -0.022 & 0.007 & 111  & -2.91  &  .004  & &  0.442   & 0.12  & 3.7    & <.001\\
+ Case[Acc]             & 0.034  & 0.013 & 4342 & 2.52   &  .012  & &   0.205  & 0.332 & 0.618  & .537\\
+ Case[Dat]             & 0.094  & 0.014 & 3769 & 6.49   &  <.001 & & -0.109   & 0.3   & -0.364 & .716\\
+ Case[Gen]             & 0.087  & 0.015 & 3645 & 5.76   &  <.001 & & -1.505   & 0.268 & -5.61  & <.001\\
+ Case[Ins]             & 0.103  & 0.014 & 4419 & 7.42   &  <.001 & &   -0.385 & 0.294 & -1.31  & .191\\
+ Case[Loc]             & 0.067  & 0.014 & 4311 & 4.77   &  <.001 & & -0.345   & 0.292 & -1.18  & .237\\
+ Gender[m]             & 0.017  & 0.016 & 589  & 1.06   &  .288  & &  0.179   & 0.345 & 0.52   & .603\\
+ Case[Acc] : Gender[m] & -0.046 & 0.019 & 4342 & -2.41  &  .016  & & -0.481   & 0.455 & -1.06  & .29\\
+ Case[Dat] : Gender[m] & -0.011 & 0.019 & 4437 & -0.58  &  .565  & & -0.357   & 0.42  & -0.85  & .395\\
+ Case[Gen] : Gender[m] & -0.026 & 0.020 & 4269 & -1.29  &  .197  & & 1.534    & 0.428 & 3.58   & <.001\\
+ Case[Ins] : Gender[m] & 0.015  & 0.019 & 4391 & 0.76   &  .448  & & -0.183   & 0.42  & -0.44  & .662\\
+ Case[Loc] : Gender[m] & -0.010 & 0.019 & 4426 & -0.53  &  .594  & & -0.143   & 0.415 & -0.34  & .731\\
+ PC3 : Gender[m]       & 0.021  & 0.009 & 107  & 2.28   &  .025  & & -0.423   & 0.155 & -2.73  & .006\\
    \lspbottomrule
-	\end{tabular}    
+ \end{tabularx}    
 \end{sidewaystable}
 
 \begin{table}
