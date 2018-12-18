@@ -65,9 +65,10 @@ I adopt the general idea of \citet{bacskaiatkaritoappear}, according to which a 
 
 %Example 4
 %
-\begin{multicols}{2}
-\ea \label{treematrix}
-\ea
+\begin{exe}
+\ex \label{treematrix} \begin{xlist}\item[]
+\begin{minipage}[b]{.6\linewidth}
+\ex
 \begin{forest} baseline, qtree
 [CP
 	[\textit{which book}\textsubscript{{[}wh{]}}]
@@ -79,7 +80,8 @@ I adopt the general idea of \citet{bacskaiatkaritoappear}, according to which a 
 		[\ldots]
 	]
 ]
-\end{forest}
+\end{forest}\vfil\end{minipage}%
+\begin{minipage}[b]{.4\linewidth}
 \ex \label{treedid}
 \begin{forest} baseline, qtree
 [CP
@@ -92,11 +94,9 @@ I adopt the general idea of \citet{bacskaiatkaritoappear}, according to which a 
 		[\ldots]
 	]
 ]
-\end{forest}
-\z
-\z
-
-\end{multicols}
+\end{forest}\vfil\end{minipage}
+\end{xlist}
+\end{exe}
 
 \noindent In either case, the C head is lexicalised by way of the verb moving up to C via head adjunction, and the SpecCP position is filled by an operator element. Note that there is a distinction between [wh] and [Q], following the idea of \citet{bayer2004}, whereby [Q] essentially stands for disjunction; wh-elements are [Q] but not all elements with a [Q] specification are [wh] (see \citealt{bacskaiatkaritoappear} for [Q] in Germanic). Further, the operator in \REF{treedid} is a covert polar operator. The polar operator can in principle be overt (e.g. English \textit{whether}) or covert, and it marks the scope of a covert \textit{or} (\citealt{larson1985}). This operator is inserted directly into SpecCP (\citealt{bianchicruschina2016}).
 
@@ -112,9 +112,8 @@ Consider now the following English embedded interrogatives:
 \noindent The corresponding structures are shown in \REF{treeembedded}:\footnote{Contrary to \citet{baltin2010}, I assume that doubly filled COMP structures are literally doubly filled COMP, that is, there is only a single CP involved; see \citet{bacskaiatkari2018sardis} for arguments on this. Essentially, \citet{baltin2010} assumes that the ban on overt material in C in sluiced clauses (\citealt{merchant2001}) follows directly from the fact that the ellipsis position is located in the highest C head, eliding the complementiser in a lower C position. However, this is in fact not a sound argument since the lack of a complementiser in these cases can be due to phonological factors as well (the complementiser cliticising onto the clause in the languages he examined), which may indeed be subject to cross-linguistic variation. In Slovenian, for instance, wh-sluices can contain a complementiser (e.g. \textit{da} `that' but apparently also \textit{\v{c}e} `if'), see \citet{marusicmismasplesnicarrazborseksuligoj2015}, indicating that the generalisation does not hold. Note that the Slovenian data contradict the judgements given by \citet[76]{merchant2001}, who suggests that while doubly filled COMP patterns are possible in Slovenian in the same way they are attested in other languages (see, for instance, the Danish and Irish data given by \citealt[76--77]{merchant2001}), the sluiced version of doubly filled COMP clauses (containing an overt complementiser) is uniformly rejected.}
 
 %Example 6
-\begin{multicols}{2}
-\ea \label{treeembedded}
-\ea \label{treewh}
+\begin{exe}\ex\label{treeembedded}
+\begin{xlist}\item[]\begin{minipage}[b]{.6\linewidth}\ex \label{treewh}
 \begin{forest} baseline, qtree
 [CP
 	[\textit{which book}\textsubscript{{[}wh{]}}]
@@ -125,7 +124,8 @@ Consider now the following English embedded interrogatives:
 		[\ldots]
 	]
 ]
-\end{forest}
+\end{forest}\end{minipage}%
+\begin{minipage}[b]{.4\linewidth}
 \ex \label{treeif}
 \begin{forest} baseline, qtree
 [CP
@@ -138,10 +138,9 @@ Consider now the following English embedded interrogatives:
 	]
 ]
 \end{forest}
-\z
-\z
-
-\end{multicols}
+\end{minipage}
+\end{xlist}
+\end{exe}
 
 \noindent The interrogative feature has to be marked overtly in embedded questions (there being no distinctive interrogative intonation) and it is done either by an overt complementiser or by an overt operator. Accordingly, the interrogative feature on C can be checked off by inserting an element into C (\textit{if}) or by inserting an element into the specifier (\textit{which book} in \REF{treewh} above). By contrast, [fin] can be lexicalised only by an element inserted into C (\textit{that} and \textit{if} in \REF{treeembedded} above, but not by e.g. \textit{which book} in the specifier).
 
@@ -447,7 +446,7 @@ The combinations observed in Germanic are given in \tabref{tablegermanic}; these
 \label{tablegermanic}
 \begin{tabularx}{\textwidth}{llll}
 \lsptoprule
-\textbf{sequence} & \textbf{clause-typing feature} & \textbf{clause type} & \textbf{examples}\\
+{Sequence} & {Clause-typing feature} & {Clause type} & {Examples}\\
 \midrule
 WH Q FIN & [wh] & constituent question & \REF{wieofdat}\\
 WH Q & [wh] & constituent question & --\\
@@ -468,7 +467,7 @@ The combinations observed in Slavic (Czech and Slovenian) are given in \tabref{t
 \label{tableslavic}
 \begin{tabularx}{\textwidth}{llll}
 \lsptoprule
-\textbf{sequence} & \textbf{clause-typing feature} & \textbf{clause type} & \textbf{examples}\\
+{Sequence} & {Clause-typing feature} & {Clause type} & {Examples}\\
 \midrule
 WH Q FIN & [FIN] & declarative, double echo & \REF{kdoceda}\\
 WH Q & [Q] & polar question, echo & \REF{kdojestli}, \REF{kdoce}\\
@@ -494,9 +493,9 @@ Consider now the structures for WH FIN sequences in Germanic (here: English) and
 
 %Example 21
 % \newpage
-\begin{multicols}{2}
-\ea
-\ea \label{treewhichbookthat}
+% \begin{multicols}{2}
+\begin{exe} \ex \begin{xlist}%
+\item[]\begin{minipage}[b]{.6\linewidth} \ex \label{treewhichbookthat}
 \begin{forest} baseline, qtree
 [CP
 	[\textit{which book}\textsubscript{{[}wh{]}}]
@@ -508,6 +507,8 @@ Consider now the structures for WH FIN sequences in Germanic (here: English) and
 	]
 ]
 \end{forest}
+\end{minipage}%
+\begin{minipage}[b]{.4\linewidth}
 \ex \label{treekdoze}
 \begin{forest} baseline, qtree
 [CP
@@ -520,10 +521,10 @@ Consider now the structures for WH FIN sequences in Germanic (here: English) and
 	]
 ]
 \end{forest}
-\z
-\z
-
-\end{multicols}
+\end{minipage}
+\end{xlist}
+\end{exe}
+% \end{multicols}
 
 \noindent As can be seen, both configurations result in a doubly filled COMP pattern. However, the C is specified as [wh] only in \REF{treewhichbookthat}, which is a true interrogative, while the Slavic pattern in \REF{treekdoze} is an echo question. The complementiser is inserted in certain dialects in Germanic to lexicalise [fin], while Slavic complementisers are inserted to type the clause.\footnote{Note that this does not mean that the complementiser is always overt. Declarative complementisers tend to have zero counterparts cross-linguistically and the same applies to e.g. \textit{že} and \textit{da}, too. This means that echo questions are possible without the insertion of an overt \textit{že}, too. This option has not been discussed in detail here because the present paper is devoted to doubling patterns in the CP-domain.}
 
@@ -569,9 +570,9 @@ Finally, consider the structures for WH Q FIN sequences, in Germanic (here: Dutc
 
 %Example 23
 %\newpage
-\begin{multicols}{2}
-\ea
-\ea \label{treewieofdat}
+\begin{exe}\ex
+\begin{xlist}\item[]\begin{minipage}[b]{.525\linewidth}
+\ex \label{treewieofdat} \footnotesize
 \begin{forest} baseline, qtree
 [CP
 	[\textit{wie}\textsubscript{{[}wh{]}}]
@@ -590,8 +591,9 @@ Finally, consider the structures for WH Q FIN sequences, in Germanic (here: Dutc
 		]
 	]
 ]
-\end{forest}
-\ex \label{treekdoceda}
+\end{forest}\vfil\end{minipage}%
+\begin{minipage}[b]{.475\linewidth}%
+\ex \label{treekdoceda} \footnotesize
 \begin{forest} baseline, qtree
 [CP
 	[\textit{kdo}\textsubscript{{[}wh{]}}]
@@ -610,11 +612,9 @@ Finally, consider the structures for WH Q FIN sequences, in Germanic (here: Dutc
 		]
 	]
 ]
-\end{forest}
-\z
-\z
-
-\end{multicols}
+\end{forest}\vfil\end{minipage}%
+\end{xlist}%
+\end{exe}
 
 \noindent As can be seen, the CP is split in both cases,\footnote{In the model adopted here, based on \citet{bacskaiatkari2018sardis}, the CP is split if certain features have to project further to be checked off but there is no predefined cartographic template in the sense of \citet{rizzi1997}. However, the assumption that there can be multiple CPs (similarly to VPs) is widespread in the literature.} yet the C head is specified as [wh] only in the Germanic case, see \REF{treewieofdat}, while the Slovenian configuration represents an echo, see \REF{treekdoceda}. In \REF{treewieofdat}, the [wh] feature of the lower C head is not checked off, since the polar operator in SpecCP is merely [Q], a subset of [wh]; hence, the CP projects further. In \REF{treekdoceda}, there is no feature checking associated with either of the operators; they are inserted to render the echo reading. Again, the finite complementiser is inserted in certain dialects in Germanic to lexicalise [fin], while Slavic complementisers are inserted to type the clause.
 
@@ -622,9 +622,6 @@ The differences between Germanic and Slavic essentially go back to differences i
 
 \section{Conclusion}
 This paper investigated doubly filled COMP effects in Germanic and Slavic (more precisely, Czech and Slovenian). It was shown that while the two language groups represent similar surface configurations, they differ crucially in the distribution and the interpretation of these structures. In Germanic, doubly filled COMP arises due to a requirement on filling a C head specified as [fin]; this is in line with the general properties of V2 (e.g. in German) and T-to-C (English). Importantly, the insertion of the finite complementiser takes place only in embedded questions and it brings interpretive differences from complementiser-less clauses. In Slavic, doubly filled COMP arises in echo questions and the complementiser is inserted to type the clause, while the element in the specifier does not check off its features with the head. The insertion of the complementiser involves an important interpretive difference from complementiser-less clauses, since the lack of the complementiser is associated with ordinary questions, while the presence of the complementiser triggers an echo interpretation. Taking all this into account, it can be concluded that the differences between Germanic and Slavic doubly filled COMP structures can be accounted for in a principled way.
-
-
-
 
 \section*{Abbreviations}
 
@@ -640,8 +637,6 @@ This paper investigated doubly filled COMP effects in Germanic and Slavic (more 
 \textsc{refl}&reflexive\\
 \textsc{sg}&singular\\
 \end{tabularx}
-
-
 
 \section*{Acknowledgements}
 This research was funded by the German Research Fund (DFG), as part of my project ``The syntax of functional left peripheries and its relation to information structure'' (BA 5201/1-1). I would like to thank Jiri Kaspar,  Mojmír Dočekal and Radek Šimík (Czech) and Moreno Mitrović (Slovenian) for their indispensable help with the data. I also owe many thanks to the audience of FDSL-12, in particular to Petra Mišmaš and Roland Meyer. Finally, I am highly grateful to the reviewers of my paper for their insightful and constructive questions and suggestions.
