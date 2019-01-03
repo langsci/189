@@ -41,6 +41,8 @@
 \usepackage{vwcol}
 \usepackage{wasysym}%symbols
 \usepackage{siunitx}
+\sisetup{output-decimal-marker={.},detect-weight=true, detect-family=true, detect-all, input-symbols={\%}, free-standing-units, input-open-uncertainty=, input-close-uncertainty=}
+\robustify\bfseries% For detect weigth to work properly
 \makeatletter
 \let\pgfmathModX=\pgfmathMod@
 \usepackage{pgfplots,pgfplotstable}%
