@@ -377,8 +377,8 @@ The past tense undergoes movement within the lower clause, leaving a trace t$_4$
 After that, the past tense undergoes another short movement that is called the res-movement \citep{Heim1994}. This type of movement is special because the moved element does not leave a trace and does not move to a c-commanding position.\footnote{\label{20:fn10}Due to those properties res-movement is highly controversial from the syntactic perspective. There is a less controversial way of deriving \textit{de re} readings (developed for individual arguments) via concept generators that was proposed by \citet{PercusSauerland2003}.} It moves to the position of the sister of the verb \textit{say}. Thus, this tense will be interpreted outside of the clause where it originates.\largerpage[-3]
 
 % example 35
-\begin{figure}\begin{footnotesize}
-\begin{forest}for tree={s sep=3mm, inner sep=0, l=0}
+\begin{figure}
+\resizebox{\textwidth}{!}{\begin{forest}for tree={s sep=3mm, inner sep=0, l=0}
 [IP
 	[DP
     	[\sout{Tanja}, roof]
@@ -404,18 +404,16 @@ After that, the past tense undergoes another short movement that is called the r
                     	[C
                         	[that]
                         ]
-                        [IP, s sep=8mm
-                        	[{},inner sep=2.5mm, name=spec IP] {
-                                            					\draw[->] () to [out=south west,in=south west] (spec PAST);
+                        [IP
+                        	[,inner sep=2.5mm, name=spec IP] {\draw[->,overlay] () to [out=south west,in=south west] (spec PAST);
                                                         }
-                        	[IP, s sep=1cm
+                        	[IP
                             	[4]
                                 	[IP
                                     	[DP [\sout{Putin}, roof]]
                                     [I$'$
                                     	[I
-                                        	[t$_4$] {
-                                            					\draw[->] () to [out=south west,in=south west] (spec IP);
+                                        	[t$_4$] {\draw[->,overlay] () to [out=south west,in=south west] (spec IP);
                                                             }
                                         ]
                                         [vP
@@ -431,7 +429,7 @@ After that, the past tense undergoes another short movement that is called the r
         ]
 ]
 ]
-\end{forest}\end{footnotesize}
+\end{forest}}
 \caption{LF of \REF{20:ex34}}\label{20:ex35}
 \end{figure}
 
@@ -540,8 +538,7 @@ The main interest for us here is the example \REF{20:ex44} and the fact that \te
 
 % example 46
 \begin{figure}
-\begin{footnotesize}
-\begin{forest}baseline, for tree={s sep=3mm, inner sep=0, l=0}
+\resizebox{\textwidth}{!}{\begin{forest}baseline, for tree={s sep=3mm, inner sep=0, l=0}
 [IP
 	[DP
     	[\sout{Tanja}, roof]
@@ -567,11 +564,11 @@ The main interest for us here is the example \REF{20:ex44} and the fact that \te
                     	[C
                         	[that]
                         ]
-                        [IP, s sep=1cm
+                        [IP
                         	[{},inner sep=2.5mm, name=spec IP] {
-                                            					\draw[->] () to [out=south west,in=south west] (spec PAST);
+                                            					\draw[->,overlay] () to [out=south west,in=south west] (spec PAST);
                                                         }
-                        	[IP, s sep=1cm
+                        	[IP
                             	[$4$]
                                 [IP
                                 	[DP
@@ -580,7 +577,7 @@ The main interest for us here is the example \REF{20:ex44} and the fact that \te
                                     [I$'$
                                     	[I
                                         	[t$_{4}$] {
-                                            					\draw[->] () to [out=south west,in=south west] (spec IP);
+                                            					\draw[->,overlay] () to [out=south west,in=south west] (spec IP);
                                                             }
                                         ]
                                         [vP
@@ -596,7 +593,7 @@ The main interest for us here is the example \REF{20:ex44} and the fact that \te
         ]
     ]
  ]
-\end{forest}\end{footnotesize}
+\end{forest}}
 \caption{LF of the relevant part of \REF{20:ex44}}\label{20:ex46}
 \end{figure}
 
