@@ -1,2 +1,56 @@
-languages to index
-oneperline
+Abkhaz
+Akanye
+Alana
+Baltic
+Basque
+Bhatia
+Biskup
+Blagodarju
+Bohemian
+Bosnian
+Brazilian Portuguese
+British English
+Bulgarian
+Čakavian
+Catalan
+Chinese
+Croatian
+Czech
+Danish
+English
+Finnish
+French
+Georgian
+German
+Germanic
+Greek
+Hebrew
+Herzegovinian
+Hindi
+Homeric Greek
+Hungarian
+Icelandic
+Ijekavian
+Irish
+Italian
+Kajkavian
+Late Latin
+Latin
+Macedonian
+Moravian
+Polish
+Romance
+Romanian
+Russian
+Serbian
+Slavic
+Slovak
+Slovene
+Slovenian
+Spanish
+Štokavian
+Swahili
+Turkish
+Ubykh
+Ukrainian
+Uyghur
