@@ -1,2 +1,149 @@
-subject terms to index
-oneperline
+imperfective
+perfective
+clitic
+dative
+participle
+ditransitive
+infinitive
+performative
+genitive
+subjunctive
+masculine
+sluice
+plural
+clause
+nominative
+adjectival
+restitutive
+adverbial
+complementiser
+conjunct
+equative
+feminine
+aspectual
+numeral
+noun
+accusative
+adverb
+interrogative
+presupposition
+ellipsis
+stative
+presupposition
+locative
+factive
+neuter
+čelovek
+cliticization
+pretonic
+animate
+entailment
+complementizer
+topicalization
+construal
+negation
+partitive
+adjective
+affricate
+implicature
+pronoun
+semantics
+experiencer
+inanimate
+repetitive
+ergative
+factivity
+anaphora
+sibilant
+referent
+specifier
+unaccusative
+syncretism
+consonant
+contrastive
+
+speech act
+present tense
+past tense
+small clause
+perfective aspect
+vowel reduction
+clitic cluster
+russian vowel reduction
+conjunction phrase
+performative speech
+lexical form
+object omission
+speech act verb
+case assignment
+gender feature
+imperfective aspect
+second position
+object drop
+heritage language
+word order
+direct object
+main clause
+natural gender
+matrix verb
+feature resolution
+performative speech act
+oblique case
+double object
+grammatical gender
+plural agreement
+left periphery
+clitic placement
+double object construction
+matrix clause
+dialect continuum
+ellipsis site
+head directionality
+null object
+complement clause
+finite complementiser
+soft consonant
+truth entailment
+narrow syntax
+subjunctive mood
+language change
+spell-out domain
+branch extraction
+syntax-semantics interface
+perfective verb
+echo interpretation
+case feature
+modal adverbial
+truth implicature
+truth inference
+vowel inventory
+semantic recoverability
+mutual entailment
+information structure
+internal argument
+external argument
+transitive verb
+archiphoneme
+participle movement
+polar operator
+discourse particle
+lexical decomposition
+comparative morpheme
+functional load
+complementary distribution
+inflectional class
+second position cliticization
+contrastive focus
+feature geometry
+subordinate clause
+accusative 
+nominative
+dative
+genitive
+instrumental
+vocative
+definite article
+processing cost
+interrogative 
+applicative 
+prenominal modifier
