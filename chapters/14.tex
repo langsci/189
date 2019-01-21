@@ -86,7 +86,7 @@ Hybrid nouns have been a challenge for theories of agreement and NP structure (s
      \glt `Marija is our new customer.'
  \z
 		
-\noindent One could treat these as so-called `epicene' nouns of the type found e.g. in Brazilian Portuguese and Greek, which can be used with both masculine and feminine referents without change in form \citep{bobaljikzocca,merchant14,kramerbook}.
+\noindent One could treat these as so-called ``epicene'' nouns of the type found e.g. in Brazilian Portuguese and Greek, which can be used with both masculine and feminine referents without change in form \citep{bobaljikzocca,merchant14,kramerbook}.
  It has been proposed that such nouns are simply listed in the lexicon twice, each with a different gender feature \citep[e.g.][19]{merchant14}. However, such an approach to BCS hybrid nouns seems to be problematic, as there is evidence that these nouns can \textit{simultaneously} bear natural and grammatical gender. 
  For example, in \REF{14:ex3} the adjective and determiner target different gender values of the noun, while \REF{14:ex4} shows the same for the nominal modifier and the participle.\footnote{Relative pronouns can also show different gender values than the attributive modifiers of a hybrid noun, as shown in \REF{14:exfn1i}, obtained at \url{http://vukajlija.com/seoski-fudbalski-tim-iz-beton-lige} $<$accessed 26.11.2016$>$.
  
@@ -112,7 +112,7 @@ Hybrid nouns have been a challenge for theories of agreement and NP structure (s
 	
 	
 
-\noindent This raises the question about the structural representation of such nouns: whether they do contain both types of gender feature simultaneously, and how exatly they should be represented. In what follows, we will answer these questions by using NP ellipsis as a diagnostic for the gender feature specification of BCS hybrid nouns.
+\noindent These examples raise the question about the structural representation of such nouns: whether they do contain both types of gender feature simultaneously, and how exatly they should be represented. In what follows, we will answer these questions by using NP ellipsis as a diagnostic for the gender feature specification of BCS hybrid nouns.
 
 \section{Gender mismatches and NP ellipsis}
 
@@ -162,9 +162,9 @@ Based on whether gender mismatches under NP ellipsis are allowed or not, previou
 \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Class}}}	& \textbf{\textsc{masc} antecedent} 	&  	\textbf{\textsc{fem} antecedent} & \multicolumn{1}{c}{\multirow{2}{*}{\textbf{Type}}}\\
 						& \textbf{\textsc{fem} ellipsis} 	& 	\textbf{\textsc{masc} ellipsis} & \\
 \midrule
-\textit{doctor}-class & {$\checkmark$} & {$\checkmark$} & Two-way alternating\\
+\textit{doctor}-class & {\ding{51}} & {\ding{51}} & Two-way alternating\\
 \textit{brother}-class & \ding{55} & \ding{55} & Non-alternating\\
-\textit{actor}-class & {$\checkmark$} & \ding{55} & One-way alternating\\
+\textit{actor}-class & {\ding{51}} & \ding{55} & One-way alternating\\
 \lspbottomrule
 \end{tabularx}
 % }
@@ -366,6 +366,7 @@ The conclusion we can draw from this is that gender mismatches are possible in e
         \z
 
      
+\newpage      
 \noindent This condition requires that mutual entailment holds between the antecedent and the ellipsis site. This prevents semantically-equivalent, non-matching ellipsis sites \REF{14:ex20b} \citet[27]{merchant2001}.
 		
 		\ea
@@ -398,7 +399,7 @@ The conclusion we can draw from this is that gender mismatches are possible in e
 		\ea $\exists x: \textsc{male}(x)\semdot \textsc{sibling}(x)\nleftrightarrow \exists x: \textsc{female}(x)\semdot \textsc{sibling}(x)$
         \z
 		
-\noindent		In the analysis of two-way alternating `epicene' nouns, however, it is often assumed that they do not contain any lexical presuppositions 
+\noindent		In the analysis of two-way alternating  ``epicene'' nouns, however, it is often assumed that they do not contain any lexical presuppositions 
 		about gender \REF{14:ex24}, and thus ellipsis is licensed \REF{14:doctor}.
 		
 		\ea \evalfun{jatros}${}=\lambda x_e\semdot \textsc{doctor}(x)$	\label{14:ex24}
@@ -439,7 +440,8 @@ The conclusion we can draw from this is that gender mismatches are possible in e
             \z \z
 			
 % 		\end{multicols}	
-		
+
+\newpage 
 		\ea \evalfun{novi mušterija}${}=\lambda x\semdot \textsc{customer}(x)$, defined only if $x$ is male
 		\ea \evalfun{\REF{14:exa}}${}=\textsc{customer}(\textsc{Marija})$
 		\ex \evalfun{\REF{14:exb}}${}=\textsc{customer}(\textsc{Marija})$, defined only if Marija is male\\\hspace*\fill\textit{(presupposition failure!)}
@@ -716,15 +718,13 @@ Some accounts \citep{matushansky13,pesetsky14,Landau2016DPinternalsemantic} assu
 
 We would like to thank Ana Bosni\'{c} and Joanna Zaleska for the help with the experimental design and coding, as well as Boban Arsenijevi\'{c}, Jelena Stojkovi\'{c}, Andrew Nevins and the audience of FDSL 12 for the valuable comments and feedback.   
 
-{\sloppy
-\printbibliography[heading=subbibliography,notkeyword=this]
-}
+
 
 \section*{Appendix}	
 		
-We use an ordinal bayesian regression model with the package \texttt{MCMCglmm} \citep{Hadfield.2010} in R \citep{rcore}. We used non-informative priors (an inverse gamma with V=1 and nu=0.002).  Table \ref{14:tab:estimates} presents the posterior mean estimates, the confidence intervals and equivalent of a Bayesian p value. The corresponding posterior estimates of the random effects can be are shown in Table \ref{14:tab:random-estimates}.
+We use an ordinal Bayesian regression model with the package \texttt{MCMCglmm} \citep{Hadfield.2010} in R \citep{rcore}. We used non-informative priors (an inverse gamma with V=1 and nu=0.002).  Table \ref{14:tab:estimates} presents the posterior mean estimates, the confidence intervals and equivalent of a Bayesian p value. The corresponding posterior estimates of the random effects can be are shown in Table \ref{14:tab:random-estimates}.
 
-\begin{table}[h]
+\begin{table} 
 \footnotesize
 
 % \hspace*{-0.2em}\resizebox{.95\textwidth}{!}{
@@ -768,6 +768,8 @@ hybrid noun & 0.06491   & 0.004233  & 0.1571    & 600           \\
 \caption{Random effects for the MCMC model.}\label{14:tab:random-estimates}
 \end{table}		
 
-
-
+{\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+}
+\clearpage 
 \end{document}
