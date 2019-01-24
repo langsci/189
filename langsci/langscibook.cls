@@ -1996,7 +1996,7 @@ width=.8\textwidth
   \includegraphics{\logopath langsci_spinelogo_nocolor.pdf}}%
   % \hspace{0.8em}%
   \hfill%
-  \parbox[b]{.87\textwidth}{\linespread{0.8}\lsChapterFooterSize\normalfont\lsCollectionPaperCitationText \includegraphics[height=.75em]{\logopath/ccby.eps}}}
+  \parbox[b]{.87\textwidth}{\linespread{0.8} \lsChapterFooterSize\normalfont\lsCollectionPaperCitationText \includegraphics[height=.75em]{\logopath/ccby.eps}}}
 \ifx\lsOutput\lsOutputPaper       % only if output==paper
 	\renewcommand{\lsCollectionPaperCitation}{Change with \string\papernote}
 \fi
