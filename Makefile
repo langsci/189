@@ -56,11 +56,15 @@ main.snd: main.bbl
 	sed -i 's/{truth implicature|//' main.sdx
 	sed -i 's/{truth inference|//' main.sdx
 	sed -i 's/{čelovek|//' main.sdx
-	sed -i 's/{branch extraction|//' main.sdx	
+	sed -i 's/{branch extraction|//' main.sdx
+	sed -i 's/{semantics|//' main.sdx	
+	sed -i 's/{subjunctive mood|//' main.sdx	
 	
 	sed -i 's/aspectual/aspect/' main.sdx	
-	sed -i 's/adjectival/adjective/' main.sdx	
+	sed -i 's/semantic recoverability/recoverability/' main.sdx	
+	sed -i 's/factive/factivity/' main.sdx	
 	sed -i 's/factive/factivity/' main.sdx		
+	sed -i 's/spell-out/spell-out/' main.sdx		
 	
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
 	python3 fixindex.py
