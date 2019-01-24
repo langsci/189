@@ -31,6 +31,37 @@ main.snd: main.bbl
 	sed -i 's/.*Organisation.*//' main.adx
 	sed -i 's/.*Embassy.*//' main.adx
 	sed -i 's/.*Commission.*//' main.adx
+	sed -i 's/{clause|//' main.sdx
+	sed -i 's/{comparative morpheme|//' main.sdx
+	sed -i 's/{complementiser|//' main.sdx
+	sed -i 's/{construal|//' main.sdx
+	sed -i 's/{present tense|//' main.sdx
+	sed -i 's/{past tense|//' main.sdx
+	sed -i 's/{gender feature|//' main.sdx
+	sed -i 's/{ellipsis site|//' main.sdx
+	sed -i 's/{imperfective aspect|//' main.sdx
+	sed -i 's/{noun|//' main.sdx
+	sed -i 's/{lexical form|//' main.sdx
+	sed -i 's/{plural agreement|//' main.sdx
+	sed -i 's/{participle movement|//' main.sdx
+	sed -i 's/{processing cost|//' main.sdx
+	sed -i 's/{pronominal -> pronoun|//' main.sdx
+	sed -i 's/{referent|//' main.sdx
+	sed -i 's/{perfective aspect|//' main.sdx
+	sed -i 's/{perfective verb|//' main.sdx
+	sed -i 's/{performative speech|//' main.sdx
+	sed -i 's/{performative|//' main.sdx
+	sed -i 's/{second position cliticization|//' main.sdx
+	sed -i 's/{truth entailment|//' main.sdx
+	sed -i 's/{truth implicature|//' main.sdx
+	sed -i 's/{truth inference|//' main.sdx
+	sed -i 's/{čelovek|//' main.sdx
+	sed -i 's/{branch extraction|//' main.sdx	
+	
+	sed -i 's/aspectual/aspect/' main.sdx	
+	sed -i 's/adjectival/adjective/' main.sdx	
+	sed -i 's/factive/factivity/' main.sdx		
+	
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
