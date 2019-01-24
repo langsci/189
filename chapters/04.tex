@@ -1,6 +1,5 @@
-\documentclass[output=paper,modfonts,hidelinks,newtxmath
+\documentclass[output=paper,modfonts,hidelinks,newtxmath]{langscibook}
 \ChapterDOI{10.5281/zenodo.2545513}
-]{langscibook}
 
 \title{Event and degree numerals: \newlineCover Evidence from Czech}
  
@@ -332,7 +331,7 @@ double suicide is twice bigger suicide\\ }
 \noindent The contrasts described above indicate that \isi{adjectival} and \isi{nominal} DNs display heterogeneous behavior in interaction with NPs implicitly associated with scales on the one hand and with event and social role nominals on the other. Possibly, the relationship between the two types of phrases is much less straightforward than it might initially seem. In this paper, however, we are primarily concerned with examples such as \REF{dvojnasobny-objem} and we assume that use of \isi{adjectival} DNs to be the basic one.
 
 \subsection{Predicate position}\label{predicate-position}
-
+\largerpage[-1]%longdistance
 Finally, the last observation concerns the attributive and predicative use of \isi{adjectival} DNs. In all the examples provided in the previous sections, \textit{dvojnásobný} appears as a \isi{nominal} modifier which seems to be the most natural syntactic context for such an expression. Nevertheless, it is not unusual to find \textit{dvojnásobný} in predicate position as well, as attested in an CNC sentence in \REF{dvojnasobny-predicate}. Here, the DN serves as the main predicate of a sentence and assigns a property to a subject denoting an amount, i.e., \textit{hodnota} `value'. In particular, it is predicated of the value of saved property it is twice as high relative to the value corresponding to the damages, i.e., it amounts to {100\,000 CZK}.
 
 \ea \gll {\dots} škoda dosahuje asi 50 tisíc korun. Hodnota uchráněného majetku je \textbf{dvojnásobná}.\label{dvojnasobny-predicate}\\
@@ -396,6 +395,7 @@ We are now ready for the first approximation. Based on the observation discussed
 
 Before we demonstrate how the proposed \isi{semantics} fits into the big picture involving comparatives and equatives, let us introduce several assumptions concerning gradability and comparison. First of all, we adopt the standard view and assume an ontology including degrees, i.e., objects of a primitive type $d$, which are ordered into scales. A scale is modeled as a triple $\langle D, >, DIM\rangle$ where $D$ is a set of degrees, $>$ is an ordering relation on $D$, and $DIM$ represents a dimension of measurement such as height or weight. Notice, however, that we embrace the interval-based approach to degrees (e.g., \citealt{kennedy2001polar} and \citealt{schwarzschild_wilkinson2002quantifiers}).
 
+\newpage 
 Second, following \cite{solt2015q-adjectives} we assume that individuals are associated with scales via measure functions that map an entity to the unique degree on the scale corresponding to the particular dimension. For instance, the measure function $\mu$\uncnst{height} yields the measure of an individual with respect to the dimension of height. Thus, the \isi{semantics} of a gradable \isi{adjective} such as \textit{tall} looks like \REF{gradable-adjective-semantics}.
 
 \ea $\llbracket$tall$\rrbracket = \lambda d\lambda x[\mu$\uncnst{height}$(x)\geq d]$\label{gradable-adjective-semantics}
@@ -417,13 +417,13 @@ Second, following \cite{solt2015q-adjectives} we assume that individuals are ass
 \end{forest}
 \z
 
+
 \noindent Finally, following \cite{pancheva2006phrasal} we assume that \ili{Slavic} comparatives such as \REF{comp-ex} involve an elided \isi{clause} introducing the maximal interval corresponding to a standard of comparison on a proper scale. Within such an approach, \ili{Czech} clausal comparatives like \REF{comp} are analyzed as in \REF{comp-LF}.
 
+\newpage 
 \ea \ea \gll Petr je vyšší než Marie.\label{comp}\\
 Petr is taller than Marie\\
 \glt `Petr is taller than Marie.'
-
-\newpage
 \ex LF: [\un{IP} [\un{IP} Petr is $d_1$-tall] [\un{DegP} -er$_1$ [\un{PP} than [\un{CP} Marie is $d$-tall]]]]\label{comp-LF}
 \z \z
 
@@ -459,6 +459,7 @@ The composition proceeds as follows. The preposition \textit{než} takes the max
 \ex $\rightlsquigarrow\cnst{Max}\big(\lambda d[\mu$\uncnst{Height}$(\textsc{Petr})\geq d]\big) = \cnst{Max}\big(\lambda d'[d'=2 \times \mu$\uncnst{Height}$(\textsc{Marie})]\big)$\label{tree-comp-dvojnasobne-semantics-b}
 \z \z
 
+\newpage 
 \noindent On the other hand, in a sentence such as \REF{aspon} where \textit{aspoň} `at least' prevents from the pragmatic inference the unstrengthened meaning unearths and we obtain the \textit{at least} interpretation given in \REF{tree-comp-dvojnasobne-semantics-a}. The lack of pragmatic enrichment in such examples is parallel to well-studied cases like \textit{more than three boys} where the modified \isi{numeral} never gives rise to a scalar \isi{implicature} (see, e.g., \citealt{krifka_at_1999} and \citealt{schulz_pragmatic_2006}). Another observation concerns the disappearance of scalar implicatures in downward-entailing contexts, as in \REF{neni}. Unlike \REF{comp-ex}, \REF{neni} does not suggest that Petr's height cannot correspond to Marie's height multiplied by three or more. We regard it as an argument in favor of the competition account resulting in the strengthening of \REF{tree-comp-dvojnasobne-semantics-a} to \REF{tree-comp-dvojnasobne-semantics-b}.
 
 \ea \ea \gll\label{aspon}Petr je \textbf{aspoň} \textbf{dvojnásobně} vyšší než Marie.\label{comp-at-least}\\
@@ -692,7 +693,7 @@ In this paper, we have presented novel evidence from \ili{Czech} concerning the 
 
 \begin{tabularx}{.5\textwidth}{@{}lQ@{}}
 \textsc{cnc}&{Czech} National Corpus\\
-\textsc{comp}&\isi{comparative}\\
+\textsc{comp}& {comparative}\\
 \textsc{dn}&degree {numeral}\\
 \textsc{en}&event {numeral}\\
 \end{tabularx}%
